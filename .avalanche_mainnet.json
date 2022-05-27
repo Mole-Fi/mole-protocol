@@ -1,0 +1,90 @@
+{
+  "ProxyAdmin": "",
+  "Timelock": "",
+  "MultiCall": "",
+  "FairLaunch": {
+    "address": "",
+    "deployedBlock": 0,
+    "pools": [
+      {
+        "id": 0,
+        "stakingToken": "",
+        "address": "",
+        "rewarder": ""
+      },
+      {
+        "id": 1,
+        "stakingToken": "",
+        "address": "",
+        "rewarder": ""
+      }
+    ]
+  },
+  "Exchanges": {
+    "TraderJoe": {
+      "JoeFactory": "",
+      "JoeRouter": "",
+      "MasterChefJoeV2": "",
+      "MasterChefJoeV3": "",
+      "LpTokens": [
+      ]
+    }
+  },
+  "Tokens": {
+    "MOLE": "",
+    "JOE": ""
+  },
+  "SharedStrategies": {
+    "TraderJoe": {
+      "StrategyAddBaseTokenOnly": "",
+      "StrategyLiquidate": "",
+      "StrategyWithdrawMinimizeTrading": "",
+      "StrategyPartialCloseLiquidate": "",
+      "StrategyPartialCloseMinimizeTrading": ""
+    }
+  },
+  "SharedConfig": {
+    "TripleSlopeModel": "",
+    "WNativeRelayer": "",
+    "WorkerConfig": ""
+  },
+  "Oracle": {
+    "OracleMedianizer": "",
+    "ChainLinkOracle": "",
+    "SimpleOracle": ""
+  },
+  "Vaults": [
+    {
+      "name": "",
+      "symbol": "",
+      "address": "",
+      "deployedBlock": 0,
+      "baseToken": "",
+      "debtToken": "",
+      "config": "",
+      "tripleSlopeModel": "",
+      "StrategyAddTwoSidesOptimal": {
+        "TraderJoe": ""
+      },
+      "workers": [
+        {
+          "name": "",
+          "address": "",
+          "deployedBlock": 0,
+          "config": "",
+          "pId": 0,
+          "stakingToken": "",
+          "stakingTokenAt": "",
+          "strategies": {
+            "StrategyAddAllBaseToken": "",
+            "StrategyLiquidate": "",
+            "StrategyAddTwoSidesOptimal": "",
+            "StrategyWithdrawMinimizeTrading": "",
+            "StrategyPartialCloseLiquidate": "",
+            "StrategyPartialCloseMinimizeTrading": ""
+          }
+        }
+      ]
+    }
+  ]
+}

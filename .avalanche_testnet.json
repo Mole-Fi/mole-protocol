@@ -1,0 +1,398 @@
+{
+  "ProxyAdmin": "0xcAB6F5f3E220b61Af8aC4872Ff7124f2437cd797",
+  "Timelock": "0x8775DA09Cc3bAAEB55f59D7c7C3812aa57A754b9",
+  "MultiCall": "",
+  "FairLaunch": {
+    "address": "0xE0FCb9AFAcf0b7a1435B253F2d337a6DcE8d4708",
+    "deployedBlock": 9627847,
+    "pools": [
+      {
+        "id": 0,
+        "stakingToken": "debtMUSDt",
+        "address": "0x15C85995c3a3e167B7B2dAC2373BdFAdCFF72448",
+        "rewarder": ""
+      },
+      {
+        "id": 1,
+        "stakingToken": "mUSDt",
+        "address": "0x634a0E5291B834F868C43931dDb40dE956832695",
+        "rewarder": ""
+      },
+      {
+        "id": 2,
+        "stakingToken": "debtMUSDC",
+        "address": "0x47715F9676A46070601D475361b6fE010D967Ffe",
+        "rewarder": ""
+      },
+      {
+        "id": 3,
+        "stakingToken": "mUSDC",
+        "address": "0x4e10192a11319fB903e67a1413ee7FAeF3Bac97b",
+        "rewarder": ""
+      },
+      {
+        "id": 6,
+        "stakingToken": "debtMETH",
+        "address": "0x8da170Aa542Ed68363b158cEf2E0222925D0f943",
+        "rewarder": ""
+      },
+      {
+        "id": 7,
+        "stakingToken": "mETH",
+        "address": "0xb87bea7D436416961F1E4cEddB4764b4B9c0cFBe",
+        "rewarder": ""
+      },
+      {
+        "id": 8,
+        "stakingToken": "debtMETH.e",
+        "address": "0x1B6a42bE103db9A6263c9267d8769edf6Df17714",
+        "rewarder": ""
+      },
+      {
+        "id": 9,
+        "stakingToken": "mETH.e",
+        "address": "0x8c088C7FeEf7Ceea67A0c372DFE4CC75bC7056Cf",
+        "rewarder": ""
+      },
+      {
+        "id": 10,
+        "stakingToken": "fdMOLE",
+        "address": "0xBdd6954C71240d4e5229fe311EA56DB31fE902d1",
+        "rewarder": ""
+      }
+    ]
+  },
+  "Exchanges": {
+    "TraderJoe": {
+      "JoeFactory": "0x58cFd94030c804a0e4bb32e0F184782167899A8D",
+      "JoeRouter": "0xC28457a88eb2C4c407F28a11c2FaA70465c72c67",
+      "MasterChefJoeV2": "0x6D0dD4B0205B6FA4e52E9aA606083678F6816dba",
+      "MasterChefJoeV3": "0xE514d3A82FCf9C06D13746Bb73DaFE3aa65ae252",
+      "LpTokens": [
+        {
+          "pId": 0,
+          "name": "USDt-USDT.e LP",
+          "address": "0xd7Fd6B6676618d8796dD760bCD6392D2093e37b5",
+          "masterChef": "0x6D0dD4B0205B6FA4e52E9aA606083678F6816dba"
+        },
+        {
+          "pId": 1,
+          "name": "USDC-USDC.e LP",
+          "address": "0x95F85869b1F022Dc651e6880fb658c4FfA662A00",
+          "masterChef": "0x6D0dD4B0205B6FA4e52E9aA606083678F6816dba"
+        },
+        {
+          "pId": 2,
+          "name": "JOE-USDt LP",
+          "address": "0x7Fbe58e91ac016A643223E5492E92D1E44Adf86b",
+          "masterChef": "0x6D0dD4B0205B6FA4e52E9aA606083678F6816dba"
+        },
+        {
+          "pId": 3,
+          "name": "JOE-USDC LP",
+          "address": "0x99F380B6d9B8374A4421Aa2d419Dd18eE5628A8F",
+          "masterChef": "0x6D0dD4B0205B6FA4e52E9aA606083678F6816dba"
+        },
+        {
+          "pId": 4,
+          "name": "USDC-USDt LP",
+          "address": "0xaa48fbe46cdd8bBF49060986b9dbDe98fC794178",
+          "masterChef": "0x6D0dD4B0205B6FA4e52E9aA606083678F6816dba"
+        },
+        {
+          "pId": 0,
+          "name": "ETH-USDC.e LP",
+          "address": "0xaCe218124DbF4e1F878FdC44Ea9450E2445De1c3",
+          "masterChef": "0xE514d3A82FCf9C06D13746Bb73DaFE3aa65ae252"
+        },
+        {
+          "pId": 1,
+          "name": "ETH.e-USDC.e LP",
+          "address": "0xf965EB48fD36bd0C970e4ea7B08031cDa44C38Cf",
+          "masterChef": "0xE514d3A82FCf9C06D13746Bb73DaFE3aa65ae252"
+        },
+        {
+          "pId": 2,
+          "name": "JOE-ETH LP",
+          "address": "0x0F55878C1058b2245D53501eCBC955BE05E6937b",
+          "masterChef": "0xE514d3A82FCf9C06D13746Bb73DaFE3aa65ae252"
+        },
+        {
+          "pId": 3,
+          "name": "JOE-ETH.e LP",
+          "address": "0x9E848ad00b298D250309587c267Ec3a6fCb87b6e",
+          "masterChef": "0xE514d3A82FCf9C06D13746Bb73DaFE3aa65ae252"
+        },
+        {
+          "pId": 4,
+          "name": "ETH-ETH.e LP",
+          "address": "0xcb35f19341C7FA00C1F69811Dfa4B9123c2e88f8",
+          "masterChef": "0xE514d3A82FCf9C06D13746Bb73DaFE3aa65ae252"
+        },
+        {
+          "pId": 5,
+          "name": "ETH-MOLE LP",
+          "address": "0x3c30BaF2E29CB5A93c0049Ff2c29A0297574068a",
+          "masterChef": "0xE514d3A82FCf9C06D13746Bb73DaFE3aa65ae252"
+        },
+        {
+          "pId": 6,
+          "name": "ETH-USDC LP",
+          "address": "0x83FE3893033d601Cc2142221c5739B52379bc4E3",
+          "masterChef": "0xE514d3A82FCf9C06D13746Bb73DaFE3aa65ae252"
+        },
+        {
+          "pId": 7,
+          "name": "MOLE-USDC LP",
+          "address": "0xAafac1BffB2C0acd2ABE843A8AEf493F66a45958",
+          "masterChef": "0xE514d3A82FCf9C06D13746Bb73DaFE3aa65ae252"
+        },
+        {
+          "pId": 8,
+          "name": "JOE-USDC LP",
+          "address": "0x99F380B6d9B8374A4421Aa2d419Dd18eE5628A8F",
+          "masterChef": "0xE514d3A82FCf9C06D13746Bb73DaFE3aa65ae252"
+        },
+        {
+          "pId": 9,
+          "name": "ETH.e-USDC LP",
+          "address": "0x00504708739A4D1883B0F408F2b9B37b38eb2e32",
+          "masterChef": "0xE514d3A82FCf9C06D13746Bb73DaFE3aa65ae252"
+        }
+      ]
+    }
+  },
+  "Tokens": {
+    "WAVAX": "0x8367A128D62130C0276022A7d0C0554aAf16F073",
+    "JOE": "0xC4E2eedc2459920ecf94DDb83621066c13498Fb4",
+    "MOLE": "0x3e3e6b73D29178844Ea725e25C4bD653D77b8492",
+    "USDT.e": "0xe91af76A859CADf025Cf40046B6b3e706FeF1711",
+    "USDt": "0x89BcE459289736611EFf9343B972965020F65C6D",
+    "USDC.e": "0x7Ae9a443968B5F38b31b96A44abEB22314887175",
+    "USDC": "0x5Eb5E2c5C7a2C027168296e3C0Bc0245D93A5C82",
+    "ETH": "0x46f20169F2AC7f26c0864eCAc58B4D5eB084137C",
+    "ETH.e": "0x06E2ff86E1539999b57a9587EFb28B16906874bb",
+    "USD": "0xFFfFfFffFFfffFFfFFfFFFFFffFFFffffFfFFFfF"
+  },
+  "SharedStrategies": {
+    "TraderJoe": {
+      "StrategyAddBaseTokenOnly": "0x442a7B8372bccde0E676687565A57C25286Cfd13",
+      "StrategyLiquidate": "0xAddcb26fb7021Cc84ecb6bFC773D0Fa5C2AEeDa1",
+      "StrategyWithdrawMinimizeTrading": "0x5B058586d3D5b36bACe95d85127F2099618daf7B",
+      "StrategyPartialCloseLiquidate": "0x1D67d3FB63B9b17f1AfA1c7Ab4e4E7cdb044ba01",
+      "StrategyPartialCloseMinimizeTrading": "0x8Eb9027B5025449562179A5EDAd874FFc138F806"
+    }
+  },
+  "SharedConfig": {
+    "TripleSlopeModel": "0xe3e5463c00E1B86c63Ed5B00D1BCc9f3b60Af435",
+    "WNativeRelayer": "0xe09309fbE4aAdF899101851C0f59Bb6F0Cd5a9d3",
+    "WorkerConfig": "0x4e193417c80a9243f92BEf83b22EFa38BdE89a99"
+  },
+  "Oracle": {
+    "OracleMedianizer": "0xBFD8DA1fa72dfC88c1a5Ce4035ab544789dc317F",
+    "ChainLinkOracle": "0xa3f15E62243B6e3924E8d40fD237f77962893A15",
+    "SimpleOracle": "0xc1eb8F8B06007C23B78F23274CCdc3e7EF95e2ec",
+    "DeltaNeutralOracle": "0x7cb407bd960e748F7E185D3e16AF00Aa87B6bb8F"
+  },
+  "Vaults": [
+    {
+      "name": "USDt Vault",
+      "symbol": "mUSDt",
+      "address": "0x634a0E5291B834F868C43931dDb40dE956832695",
+      "deployedBlock": 9628122,
+      "baseToken": "0x89BcE459289736611EFf9343B972965020F65C6D",
+      "debtToken": "0x15C85995c3a3e167B7B2dAC2373BdFAdCFF72448",
+      "config": "0x352fDD4BE3Bfca593e691233B9ca5b4620999061",
+      "tripleSlopeModel": "0xe3e5463c00E1B86c63Ed5B00D1BCc9f3b60Af435",
+      "StrategyAddTwoSidesOptimal": {
+        "TraderJoe": "0x38518C5A95324a9668F37Df1877DD10954555BD8"
+      },
+      "workers": [
+        {
+          "name": "USDt-USDT.e TraderJoeWorker",
+          "address": "0xB2AcDfDf747621b0051d25B2f034B3e68C56110D",
+          "deployedBlock": 9628732,
+          "config": "0x4e193417c80a9243f92BEf83b22EFa38BdE89a99",
+          "pId": 0,
+          "stakingToken": "0xd7Fd6B6676618d8796dD760bCD6392D2093e37b5",
+          "stakingTokenAt": "0x6D0dD4B0205B6FA4e52E9aA606083678F6816dba",
+          "strategies": {
+            "StrategyAddAllBaseToken": "0x442a7B8372bccde0E676687565A57C25286Cfd13",
+            "StrategyLiquidate": "0xAddcb26fb7021Cc84ecb6bFC773D0Fa5C2AEeDa1",
+            "StrategyAddTwoSidesOptimal": "0x38518C5A95324a9668F37Df1877DD10954555BD8",
+            "StrategyWithdrawMinimizeTrading": "0x5B058586d3D5b36bACe95d85127F2099618daf7B",
+            "StrategyPartialCloseLiquidate": "0x1D67d3FB63B9b17f1AfA1c7Ab4e4E7cdb044ba01",
+            "StrategyPartialCloseMinimizeTrading": "0x8Eb9027B5025449562179A5EDAd874FFc138F806"
+          }
+        }
+      ]
+    },
+    {
+      "name": "USDC Vault",
+      "symbol": "mUSDC",
+      "address": "0x4e10192a11319fB903e67a1413ee7FAeF3Bac97b",
+      "deployedBlock": 9746984,
+      "baseToken": "0x5Eb5E2c5C7a2C027168296e3C0Bc0245D93A5C82",
+      "debtToken": "0x47715F9676A46070601D475361b6fE010D967Ffe",
+      "config": "0xb8FDBc4f472367080940e7B2EA0c2F41F56816D9",
+      "tripleSlopeModel": "0xe3e5463c00E1B86c63Ed5B00D1BCc9f3b60Af435",
+      "StrategyAddTwoSidesOptimal": {
+        "TraderJoe": "0x450aDfa94C7a87c2568C4c390Ab4dAA19bA29b2f"
+      },
+      "workers": [
+        {
+          "name": "USDC-USDC.e TraderJoeWorker",
+          "address": "0x85291470140e2FddB1A717CB9aBB56d304d84C10",
+          "deployedBlock": 9750999,
+          "config": "0x4e193417c80a9243f92BEf83b22EFa38BdE89a99",
+          "pId": 1,
+          "stakingToken": "0x95F85869b1F022Dc651e6880fb658c4FfA662A00",
+          "stakingTokenAt": "0x6D0dD4B0205B6FA4e52E9aA606083678F6816dba",
+          "strategies": {
+            "StrategyAddAllBaseToken": "0x442a7B8372bccde0E676687565A57C25286Cfd13",
+            "StrategyLiquidate": "0xAddcb26fb7021Cc84ecb6bFC773D0Fa5C2AEeDa1",
+            "StrategyAddTwoSidesOptimal": "0x450aDfa94C7a87c2568C4c390Ab4dAA19bA29b2f",
+            "StrategyWithdrawMinimizeTrading": "0x5B058586d3D5b36bACe95d85127F2099618daf7B",
+            "StrategyPartialCloseLiquidate": "0x1D67d3FB63B9b17f1AfA1c7Ab4e4E7cdb044ba01",
+            "StrategyPartialCloseMinimizeTrading": "0x8Eb9027B5025449562179A5EDAd874FFc138F806"
+          }
+        },
+        {
+          "name": "USDC-ETH TraderJoeWorker",
+          "address": "0x21A4Bf13cC7249e5445C9A927804C75cCc5ca09c",
+          "deployedBlock": 9894084,
+          "config": "0x4e193417c80a9243f92BEf83b22EFa38BdE89a99",
+          "pId": 6,
+          "stakingToken": "0x83FE3893033d601Cc2142221c5739B52379bc4E3",
+          "stakingTokenAt": "0xE514d3A82FCf9C06D13746Bb73DaFE3aa65ae252",
+          "strategies": {
+            "StrategyAddAllBaseToken": "0x442a7B8372bccde0E676687565A57C25286Cfd13",
+            "StrategyLiquidate": "0xAddcb26fb7021Cc84ecb6bFC773D0Fa5C2AEeDa1",
+            "StrategyAddTwoSidesOptimal": "0x450aDfa94C7a87c2568C4c390Ab4dAA19bA29b2f",
+            "StrategyWithdrawMinimizeTrading": "0x5B058586d3D5b36bACe95d85127F2099618daf7B",
+            "StrategyPartialCloseLiquidate": "0x1D67d3FB63B9b17f1AfA1c7Ab4e4E7cdb044ba01",
+            "StrategyPartialCloseMinimizeTrading": "0x8Eb9027B5025449562179A5EDAd874FFc138F806"
+          }
+        },
+        {
+          "name": "USDC-ETH 3x DeltaNeutralTraderJoeWorker",
+          "address": "0x660fBc37439f64DE7114c07fdAFA19d995ee2086",
+          "deployedBlock": 9855598,
+          "config": "0x4e193417c80a9243f92BEf83b22EFa38BdE89a99",
+          "pId": 6,
+          "stakingToken": "0x83FE3893033d601Cc2142221c5739B52379bc4E3",
+          "stakingTokenAt": "0xE514d3A82FCf9C06D13746Bb73DaFE3aa65ae252",
+          "strategies": {
+            "StrategyAddAllBaseToken": "0x442a7B8372bccde0E676687565A57C25286Cfd13",
+            "StrategyLiquidate": "0xAddcb26fb7021Cc84ecb6bFC773D0Fa5C2AEeDa1",
+            "StrategyAddTwoSidesOptimal": "0x450aDfa94C7a87c2568C4c390Ab4dAA19bA29b2f",
+            "StrategyWithdrawMinimizeTrading": "0x5B058586d3D5b36bACe95d85127F2099618daf7B",
+            "StrategyPartialCloseLiquidate": "0x1D67d3FB63B9b17f1AfA1c7Ab4e4E7cdb044ba01",
+            "StrategyPartialCloseMinimizeTrading": "0x8Eb9027B5025449562179A5EDAd874FFc138F806"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ETH Vault",
+      "symbol": "mETH",
+      "address": "0xb87bea7D436416961F1E4cEddB4764b4B9c0cFBe",
+      "deployedBlock": 9829593,
+      "baseToken": "0x46f20169F2AC7f26c0864eCAc58B4D5eB084137C",
+      "debtToken": "0x8da170Aa542Ed68363b158cEf2E0222925D0f943",
+      "config": "0x42C2b706303F0933Ca1b9a5e9747C3689Ff00faB",
+      "tripleSlopeModel": "0xe3e5463c00E1B86c63Ed5B00D1BCc9f3b60Af435",
+      "StrategyAddTwoSidesOptimal": {
+        "TraderJoe": "0x22141f26d448519C2Fc4E1D129f8334aeC49AEE1"
+      },
+      "workers": [
+        {
+          "name": "ETH-USDC.e TraderJoeWorker",
+          "address": "0xB75F1Dfcf2600026ae3B9845d941A3493702226d",
+          "deployedBlock": 9830386,
+          "config": "0x4e193417c80a9243f92BEf83b22EFa38BdE89a99",
+          "pId": 0,
+          "stakingToken": "0xaCe218124DbF4e1F878FdC44Ea9450E2445De1c3",
+          "stakingTokenAt": "0xE514d3A82FCf9C06D13746Bb73DaFE3aa65ae252",
+          "strategies": {
+            "StrategyAddAllBaseToken": "0x442a7B8372bccde0E676687565A57C25286Cfd13",
+            "StrategyLiquidate": "0xAddcb26fb7021Cc84ecb6bFC773D0Fa5C2AEeDa1",
+            "StrategyAddTwoSidesOptimal": "0x22141f26d448519C2Fc4E1D129f8334aeC49AEE1",
+            "StrategyWithdrawMinimizeTrading": "0x5B058586d3D5b36bACe95d85127F2099618daf7B",
+            "StrategyPartialCloseLiquidate": "0x1D67d3FB63B9b17f1AfA1c7Ab4e4E7cdb044ba01",
+            "StrategyPartialCloseMinimizeTrading": "0x8Eb9027B5025449562179A5EDAd874FFc138F806"
+          }
+        },
+        {
+          "name": "ETH-USDC 3x DeltaNeutralTraderJoeWorker",
+          "address": "0xa1233717196bFAEadc7530F1edf05a8E504157Fb",
+          "deployedBlock": 9855634,
+          "config": "0x4e193417c80a9243f92BEf83b22EFa38BdE89a99",
+          "pId": 6,
+          "stakingToken": "0x83FE3893033d601Cc2142221c5739B52379bc4E3",
+          "stakingTokenAt": "0xE514d3A82FCf9C06D13746Bb73DaFE3aa65ae252",
+          "strategies": {
+            "StrategyAddAllBaseToken": "0x442a7B8372bccde0E676687565A57C25286Cfd13",
+            "StrategyLiquidate": "0xAddcb26fb7021Cc84ecb6bFC773D0Fa5C2AEeDa1",
+            "StrategyAddTwoSidesOptimal": "0x22141f26d448519C2Fc4E1D129f8334aeC49AEE1",
+            "StrategyWithdrawMinimizeTrading": "0x5B058586d3D5b36bACe95d85127F2099618daf7B",
+            "StrategyPartialCloseLiquidate": "0x1D67d3FB63B9b17f1AfA1c7Ab4e4E7cdb044ba01",
+            "StrategyPartialCloseMinimizeTrading": "0x8Eb9027B5025449562179A5EDAd874FFc138F806"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ETH.e Vault",
+      "symbol": "mETH.e",
+      "address": "0x8c088C7FeEf7Ceea67A0c372DFE4CC75bC7056Cf",
+      "deployedBlock": 9829698,
+      "baseToken": "0x06E2ff86E1539999b57a9587EFb28B16906874bb",
+      "debtToken": "0x1B6a42bE103db9A6263c9267d8769edf6Df17714",
+      "config": "0xFCC7B101298371bDF31F94B34278B5d4db7ce6f2",
+      "tripleSlopeModel": "0xe3e5463c00E1B86c63Ed5B00D1BCc9f3b60Af435",
+      "StrategyAddTwoSidesOptimal": {
+        "TraderJoe": "0xA1Ccff31354639C7D689d3d8181F5DDA50b9e233"
+      },
+      "workers": [
+        {
+          "name": "ETH.e-USDC.e TraderJoeWorker",
+          "address": "0xF9dA6072aA0dC1C60b7c3115e67B8B4b2264d599",
+          "deployedBlock": 9830820,
+          "config": "0x4e193417c80a9243f92BEf83b22EFa38BdE89a99",
+          "pId": 1,
+          "stakingToken": "0xf965EB48fD36bd0C970e4ea7B08031cDa44C38Cf",
+          "stakingTokenAt": "0xE514d3A82FCf9C06D13746Bb73DaFE3aa65ae252",
+          "strategies": {
+            "StrategyAddAllBaseToken": "0x442a7B8372bccde0E676687565A57C25286Cfd13",
+            "StrategyLiquidate": "0xAddcb26fb7021Cc84ecb6bFC773D0Fa5C2AEeDa1",
+            "StrategyAddTwoSidesOptimal": "0xA1Ccff31354639C7D689d3d8181F5DDA50b9e233",
+            "StrategyWithdrawMinimizeTrading": "0x5B058586d3D5b36bACe95d85127F2099618daf7B",
+            "StrategyPartialCloseLiquidate": "0x1D67d3FB63B9b17f1AfA1c7Ab4e4E7cdb044ba01",
+            "StrategyPartialCloseMinimizeTrading": "0x8Eb9027B5025449562179A5EDAd874FFc138F806"
+          }
+        }
+      ]
+    }
+  ],
+  "DeltaNeutralVaults": [
+    {
+      "name": "Hedge Fund 3x ETH-USDC TDJ1",
+      "symbol": "f3x-ETHUSDC-TDJ1",
+      "address": "0x1FfCFD6150D7200B6479052C0760DFa7986ceb43",
+      "deployedBlock": 9855825,
+      "config": "0x96b16cFFb3797e861666F48e8dE621f7BE318A87",
+      "lpToken": "0x83FE3893033d601Cc2142221c5739B52379bc4E3",
+      "assetToken": "0x46f20169F2AC7f26c0864eCAc58B4D5eB084137C",
+      "stableToken": "0x5Eb5E2c5C7a2C027168296e3C0Bc0245D93A5C82",
+      "assetVault": "0xb87bea7D436416961F1E4cEddB4764b4B9c0cFBe",
+      "stableVault": "0x4e10192a11319fB903e67a1413ee7FAeF3Bac97b",
+      "assetDeltaWorker": "0xa1233717196bFAEadc7530F1edf05a8E504157Fb",
+      "stableDeltaWorker": "0x660fBc37439f64DE7114c07fdAFA19d995ee2086",
+      "gateway": "0xd56e551B999e38375f61953e2644c3230dE92d4d",
+      "oracle": "0x7cb407bd960e748F7E185D3e16AF00Aa87B6bb8F",
+      "assetVaultPosId": "1",
+      "stableVaultPosId": "3"
+    }
+  ]
+}

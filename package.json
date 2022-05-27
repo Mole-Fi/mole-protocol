@@ -1,0 +1,179 @@
+{
+  "name": "mole-protocol",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "prepublish": "yarn build",
+    "build": "yarn run build:cjs",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+
+    "compile5": "hardhat typechain --config hardhat.config.5.ts",
+    "compile6": "hardhat typechain --config hardhat.config.ts",
+    "compile6.12": "hardhat typechain --config hardhat.config.6.12.ts",
+    "compile8.10": "hardhat typechain --config hardhat.config.8.10.ts",
+    "compile8.11": "hardhat typechain --config hardhat.config.8.11.ts",
+    "compile": "yarn run compile5 && yarn run compile6 && yarn run compile6.12 && yarn run compile8.10 && yarn run compile8.11",
+
+    "-------------------- avalanche_testnet deploy ----------------" : "",
+    "deploy:avalanche_testnet:wavax:deploy:wavax": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags WAVAX",
+    "deploy:avalanche_testnet:trader-joe:deploy:simple-rewarder": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags TraderJoeSimpleRewarder",
+    "deploy:avalanche_testnet:trader-joe:deploy:trader-joe-swap": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags TraderJoeSwap",
+    "deploy:avalanche_testnet:trader-joe:deploy:trader-joe-master-chef-v3": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags TraderJoeSwapMasterChefV3",
+    "deploy:avalanche_testnet:dex:deploy:token-liq-pool-joe": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags TestnetDeployTokensJoe",
+    
+    "deploy:avalanche_testnet:oracles:deploy:simple-price-oracle": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags SimpleOracle",
+    "deploy:avalanche_testnet:oracles:deploy:chainlink-oracle2": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags ChainlinkPriceOracle2",
+    "deploy:avalanche_testnet:oracles:deploy:oracle-medianizer": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags OracleMedianizer",
+
+    "deploy:avalanche_testnet:worker-config:deploy:worker-config": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags WorkerConfig",
+    "deploy:avalanche_testnet:wnative-relayer:deploy:wnative-relayer": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags WNativeRelayer",
+    "deploy:avalanche_testnet:triple-slope-model:deploy:triple-slope-model": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags TripleSlopeModel",
+    "deploy:avalanche_testnet:timelock:deploy:timelock": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags Timelock",
+    
+    "deploy:avalanche_testnet:mole-token:deploy:mole-token:fair-launch": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags FairLaunch",
+    
+    "deploy:avalanche_testnet:vault-config:deploy:vault-config": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags ConfigurableInterestVaultConfig",
+    "deploy:avalanche_testnet:vault:deploy:vault": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags Vault",
+    
+    "deploy:avalanche_testnet:strategies:deploy:trader-joe:share-strategies": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags TraderJoeShareRestrictedStrategies",
+    "deploy:avalanche_testnet:strategies:deploy:trader-joe:vault-strategies": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags TraderJoeRestrictedVaultStrategies",
+
+    "deploy:avalanche_testnet:workers:deploy:trader-joe-v2-workers03": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags TraderJoeV2Workers03",
+    "deploy:avalanche_testnet:workers:deploy:trader-joe-v2-workers03e": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags TraderJoeV2Workers03e",
+    
+    "deploy:avalanche_testnet:workers:deploy:trader-joe-v3-workers03": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags TraderJoeV3Workers03",
+    "deploy:avalanche_testnet:workers:deploy:trader-joe-v3-workers03e": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags TraderJoeV3Workers03e",
+
+    
+    "deploy:avalanche_testnet:delta-neutral-oracle:deploy:delta-neutral-oracle": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags DeltaNeutralOracle",
+    "deploy:avalanche_testnet:delta-neutral-vault-config:deploy:delta-neutral-vault-config": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags DeltaNeutralVaultConfig",
+    "deploy:avalanche_testnet:delta-neutral-worker:deploy:delta-neutral-trader-joe-worker": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags DeltaNeutralTraderJoeWorker03",
+    "deploy:avalanche_testnet:delta-neutral-vault:deploy:delta-neutral-vault": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags DeltaNeutralVault",
+    "deploy:avalanche_testnet:delta-neutral-vault-gateway:deploy:delta-neutral-vault-gateway": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags DeltaNeutralVaultGateway",
+    "deploy:avalanche_testnet:delta-neutral-worker:config:set-whitelist-callers": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags DeltaNeutralWorkerSetWhitelistCallers",
+    "avalanche_testnet:vault-config:config:set-whitelisted-callers": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags DirectSetWhitelistedCallers",
+    "deploy:avalanche_testnet:delta-neutral-vault:config:init-positions": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags DeltaNeutralVaultInitPositions",
+
+    "deploy:avalanche_testnet:revenue-treasury:deploy:revenue-treasury": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags RevenueTreasury",
+
+    "-------------------- avalanche_testnet upgrade -----------------" : "",
+    "upgrade:avalanche_testnet:strategies:upgrade:trader-joe:share-strategies-without-time-lock": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags UpgradeTraderJoeShareRestrictedStrategiesWithoutTimeLock",
+    "upgrade:avalanche_testnet:strategies:upgrade:trader-joe:vault-strategies-without-time-lock": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags UpgradeTraderJoeRestrictedVaultStrategiesWithoutTimeLock",
+    
+    "upgrade:avalanche_testnet:delta-neutral-worker:upgrade:upgrade-delta-neutral-trader-joe-worker": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags UpgradeDeltaNeutralTraderJoeWorker03",
+    
+
+    "-------------------- avalanche_testnet config -----------------" : "",
+    "config:avalanche_testnet:oracles:config:add-primary-source-oracle-medianizer": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags AddSourceOracleMedianizer",
+    "config:avalanche_testnet:oracles:config:set-simple-price-oracle-prices": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags SetSimplePriceOraclePrices",
+    
+    "config:avalanche_testnet:fairlaunch:config:add-pool-without-timelock": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags AddPoolWithoutTimelock",
+    "config:avalanche_testnet:vault:set-whitelisted-liquidators": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags DirectSetWhitelistedLiquidators",
+    "config:avalanche_testnet:workers:config:set-reinvest-config-without-time-lock": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags SetReinvestConfigWorkers02",
+    "config:avalanche_testnet:worker:set-configs": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags SetConfigWorkers",
+
+    "config:avalanche_testnet:worker:set-reinvestor-without-timelock": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags SetReinvestConfigWorkersWithoutTimelock",
+
+
+    "--------------------- avalanche_mainnet deploy -------------------" : "",
+    "deploy:avalanche_mainnet:oracles:deploy:simple-price-oracle": "hardhat --network avalanche_mainnet deploy --no-compile --reset --tags SimpleOracle",
+    "deploy:avalanche_mainnet:oracles:deploy:chainlink-oracle2": "hardhat --network avalanche_mainnet deploy --no-compile --reset --tags ChainlinkPriceOracle2",
+    "deploy:avalanche_mainnet:oracles:deploy:oracle-medianizer": "hardhat --network avalanche_mainnet deploy --no-compile --reset --tags OracleMedianizer",
+
+
+    "deploy:avalanche_mainnet:worker-config:deploy:worker-config": "hardhat --network avalanche_mainnet deploy --no-compile --reset --tags WorkerConfig",
+    "deploy:avalanche_mainnet:wnative-relayer:deploy:wnative-relayer": "hardhat --network avalanche_mainnet deploy --no-compile --reset --tags WNativeRelayer",
+    "deploy:avalanche_mainnet:triple-slope-model:deploy:triple-slope-model": "hardhat --network avalanche_mainnet deploy --no-compile --reset --tags TripleSlopeModel",
+    "deploy:avalanche_mainnet:timelock:deploy:timelock": "hardhat --network avalanche_mainnet deploy --no-compile --reset --tags Timelock",
+    
+    "deploy:avalanche_mainnet:mole-token:deploy:mole-token:fair-launch": "hardhat --network avalanche_mainnet deploy --no-compile --reset --tags FairLaunch",
+
+    "deploy:avalanche_mainnet:vault-config:deploy:vault-config": "hardhat --network avalanche_mainnet deploy --no-compile --reset --tags ConfigurableInterestVaultConfig",
+    "deploy:avalanche_mainnet:vault:deploy:vault": "hardhat --network avalanche_mainnet deploy --no-compile --reset --tags Vault",
+
+    "deploy:avalanche_mainnet:strategies:deploy:trader-joe:share-strategies": "hardhat --network avalanche_mainnet deploy --no-compile --reset --tags TraderJoeShareRestrictedStrategies",
+    "deploy:avalanche_mainnet:strategies:deploy:trader-joe:vault-strategies": "hardhat --network avalanche_mainnet deploy --no-compile --reset --tags TraderJoeRestrictedVaultStrategies",
+
+    "deploy:avalanche_mainnet:workers:deploy:trader-joe-v3-workers03e": "hardhat --network avalanche_mainnet deploy --no-compile --reset --tags TraderJoeV3Workers03e",
+
+    "-------------------- avalanche_mainnet config -----------------" : "",
+    "deploy:avalanche_mainnet:101:oracles:config:add-price-source-chainlink2": "hardhat --network avalanche_mainnet deploy --no-compile --reset --tags AddSourceChainLinkPriceOracle2",
+    "config:avalanche_mainnet:oracles:config:add-primary-source-oracle-medianizer": "hardhat --network avalanche_mainnet deploy --no-compile --reset --tags AddSourceOracleMedianizer"
+
+
+
+  },
+  "author": "Econiche",
+  "license": "ISC",
+  "devDependencies": {
+    "@chainlink/contracts": "^0.1.7",
+    "@ethersproject/bignumber": "^5.0.14",
+    "@nomiclabs/hardhat-ethers": "^2.0.1",
+    "@nomiclabs/hardhat-etherscan": "^2.1.1",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@openzeppelin/contracts": "3.4.2",
+    "@openzeppelin/contracts-ethereum-package": "^3.0.0",
+    "@openzeppelin/hardhat-upgrades": "^1.9.0",
+    "@openzeppelin/test-helpers": "^0.5.10",
+    "@typechain/ethers-v5": "^8.0.2",
+    "@typechain/hardhat": "^3.0.0",
+    "@types/chai": "^4.2.15",
+    "@types/mocha": "^8.2.0",
+    "@types/node": "^14.14.28",
+    "@uniswap/v2-core": "^1.0.1",
+    "chai": "^4.3.0",
+    "chai-bn": "^0.2.1",
+    "dotenv": "^8.2.0",
+    "ethereum-waffle": "^3.4.0",
+    "ethereumjs-util": "^7.0.10",
+    "ethers": "^5.5.1",
+    "hardhat": "^2.8.0",
+    "hardhat-deploy": "^0.9.24",
+    "prettier": "^2.3.0",
+    "prettier-plugin-solidity": "^1.0.0-beta.10",
+    "solhint": "^3.3.4",
+    "solhint-plugin-prettier": "^0.0.5",
+    "solidity-coverage": "^0.7.15",
+    "ts-generator": "^0.1.1",
+    "ts-node": "^9.1.1",
+    "typechain": "^6.0.2",
+    "typescript": "^4.1.5"
+  },
+  "files": [
+    "typechain",
+    "artifacts",
+    "contracts",
+    "merkle-distribution-info",
+    ".staging.json"
+  ],
+  "resolutions": {
+    "lodash": "^4.17.21",
+    "node-fetch": "^2.6.7",
+    "nanoid": "^3.1.31",
+    "node-forge": "^1.0.0",
+    "shelljs": "^0.8.5",
+    "follow-redirects": "^1.14.7",
+    "marked": "^4.0.10",
+    "braces": "^2.3.1",
+    "axios": "^0.21.2",
+    "ws": "^7.4.6",
+    "ansi-regex": "^5.0.1",
+    "nth-check": "^2.0.1",
+    "web3": "^1.7.0",
+    "glob-parent": "^5.1.2",
+    "underscore": "^1.12.1",
+    "elliptic": "^6.5.4",
+    "yargs-parser": "^13.1.2",
+    "minimist": "^1.2.3",
+    "lodash.template": "^4.5.0",
+    "mem": "^4.0.0",
+    "concat-stream": "^1.5.2",
+    "simple-get": "^2.8.2"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts-upgradeable": "^4.5.1"
+  }
+}

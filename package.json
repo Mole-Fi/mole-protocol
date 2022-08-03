@@ -14,6 +14,8 @@
     "compile8.11": "hardhat typechain --config hardhat.config.8.11.ts",
     "compile": "yarn run compile5 && yarn run compile6 && yarn run compile6.12 && yarn run compile8.10 && yarn run compile8.11",
 
+    "compile.a": "hardhat typechain --config hardhat.config.a.ts",
+
     "-------------------- avalanche_testnet deploy ----------------" : "",
     "deploy:avalanche_testnet:wavax:deploy:wavax": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags WAVAX",
     "deploy:avalanche_testnet:trader-joe:deploy:simple-rewarder": "hardhat --network avalanche_testnet deploy --no-compile --reset --tags TraderJoeSimpleRewarder",

@@ -110,6 +110,8 @@
       "MasterChefJoeV2": "0xd6a4F121CA35509aF06A0Be99093d08462f53052",
       "MasterChefJoeV3": "0x188bED1968b795d5c9022F6a0bb5931Ac4c18F00",
       "BoostedMasterChefJoe": "0x4483f0b6e2F5486D06958C20f8C39A7aBe87bf8F",
+      "VeJoe": "0x3cabf341943Bc8466245e4d6F1ae0f8D071a1456",
+      "VeJoeStaking": "0x25D85E17dD9e544F6E9F8D44F99602dbF5a97341",
       "LpTokens": [
         {
           "pId": 30,
@@ -147,12 +149,14 @@
           "address": "0x67926d973cd8ee876ad210faaf7dffa99e414acf",
           "masterChef": "0xd6a4F121CA35509aF06A0Be99093d08462f53052"
         },
+        
         {
           "pId": 51,
           "name": "sAVAX-AVAX LP",
           "address": "0x4b946c91c2b1a7d7c40fb3c130cdfbaf8389094d",
           "masterChef": "0x188bED1968b795d5c9022F6a0bb5931Ac4c18F00"
         },
+
         {
           "pId": 0,
           "name": "WAVAX-USDC LP",
@@ -250,7 +254,8 @@
   "SharedConfig": {
     "TripleSlopeModel": "0x873543CB66F7F0A32daDF87D82eAAB68B67fB257",
     "WNativeRelayer": "0x1E35232Ccf982A560C00E55FBabce6F6d878dB81",
-    "WorkerConfig": "0x3610bf1C74a168BbA676a6a80BeBC9AA30194F35"
+    "WorkerConfig": "0x3610bf1C74a168BbA676a6a80BeBC9AA30194F35",
+    "DeltaAnchorVaultHealthChecker": "0x8e3952d98752598Ae2F41b36C54C2Ae92e75C9e0"
   },
   "Oracle": {
     "OracleMedianizer": "0x9f92a4283Be58f814eD27cE18eF4E53Def8d952C",
@@ -490,6 +495,74 @@
             "StrategyPartialCloseLiquidate": "0x6b79878A402B9Da9fbA50D32e26e241dF62b2EfE",
             "StrategyPartialCloseMinimizeTrading": "0x89812Dfc1EA7B990609d818466272c0FFeF44646"
           }
+        },
+        {
+          "name": "WAVAX-DAI.e H3 TDJ2 DeltaNeutralTraderJoeWorker",
+          "address": "0x0D5c79ca0D8E7D601B8d5b179D2AD88d07eB6799",
+          "deployedBlock": 16359533,
+          "config": "0x3610bf1C74a168BbA676a6a80BeBC9AA30194F35",
+          "pId": 37,
+          "stakingToken": "0x87dee1cc9ffd464b79e058ba20387c1984aed86a",
+          "stakingTokenAt": "0xd6a4F121CA35509aF06A0Be99093d08462f53052",
+          "strategies": {
+            "StrategyAddAllBaseToken": "0xf63A23D87196Ff07403Cdee67215c6a7767033a7",
+            "StrategyLiquidate": "0x256b663332D00C1089104738560523Be3D615055",
+            "StrategyAddTwoSidesOptimal": "0xa4df341FE2BDDF5fF09824C43EfFce09723a334F",
+            "StrategyWithdrawMinimizeTrading": "0x729B7C248FdE6ebdd13AB5fF0835C497C077972A",
+            "StrategyPartialCloseLiquidate": "0x6b79878A402B9Da9fbA50D32e26e241dF62b2EfE",
+            "StrategyPartialCloseMinimizeTrading": "0x89812Dfc1EA7B990609d818466272c0FFeF44646"
+          }
+        },
+        {
+          "name": "WAVAX-USDC.e H3 TDJ3 DeltaNeutralTraderJoeWorker",
+          "address": "0xde1Bd3FFB14F2bee73cf5d31493ef5e404643f8A",
+          "deployedBlock": 16359622,
+          "config": "0x3610bf1C74a168BbA676a6a80BeBC9AA30194F35",
+          "pId": 3,
+          "stakingToken": "0xa389f9430876455c36478deea9769b7ca4e3ddb1",
+          "stakingTokenAt": "0x4483f0b6e2F5486D06958C20f8C39A7aBe87bf8F",
+          "strategies": {
+            "StrategyAddAllBaseToken": "0xf63A23D87196Ff07403Cdee67215c6a7767033a7",
+            "StrategyLiquidate": "0x256b663332D00C1089104738560523Be3D615055",
+            "StrategyAddTwoSidesOptimal": "0xa4df341FE2BDDF5fF09824C43EfFce09723a334F",
+            "StrategyWithdrawMinimizeTrading": "0x729B7C248FdE6ebdd13AB5fF0835C497C077972A",
+            "StrategyPartialCloseLiquidate": "0x6b79878A402B9Da9fbA50D32e26e241dF62b2EfE",
+            "StrategyPartialCloseMinimizeTrading": "0x89812Dfc1EA7B990609d818466272c0FFeF44646"
+          }
+        },
+        {
+          "name": "WAVAX-DAI.e B2 TDJ4 DeltaNeutralTraderJoeWorker",
+          "address": "0xc8637954467B758ed1FA8B51f1Fef9E1F28642C1",
+          "deployedBlock": 16661126,
+          "config": "0x3610bf1C74a168BbA676a6a80BeBC9AA30194F35",
+          "pId": 37,
+          "stakingToken": "0x87dee1cc9ffd464b79e058ba20387c1984aed86a",
+          "stakingTokenAt": "0xd6a4F121CA35509aF06A0Be99093d08462f53052",
+          "strategies": {
+            "StrategyAddAllBaseToken": "0xf63A23D87196Ff07403Cdee67215c6a7767033a7",
+            "StrategyLiquidate": "0x256b663332D00C1089104738560523Be3D615055",
+            "StrategyAddTwoSidesOptimal": "0xa4df341FE2BDDF5fF09824C43EfFce09723a334F",
+            "StrategyWithdrawMinimizeTrading": "0x729B7C248FdE6ebdd13AB5fF0835C497C077972A",
+            "StrategyPartialCloseLiquidate": "0x6b79878A402B9Da9fbA50D32e26e241dF62b2EfE",
+            "StrategyPartialCloseMinimizeTrading": "0x89812Dfc1EA7B990609d818466272c0FFeF44646"
+          }
+        },
+        {
+          "name": "WAVAX-USDC.e B2 TDJ5 DeltaNeutralTraderJoeWorker",
+          "address": "0xCF0F332cc21165Cd6EF7a772d94341455946c18f",
+          "deployedBlock": 16661175,
+          "config": "0x3610bf1C74a168BbA676a6a80BeBC9AA30194F35",
+          "pId": 3,
+          "stakingToken": "0xa389f9430876455c36478deea9769b7ca4e3ddb1",
+          "stakingTokenAt": "0x4483f0b6e2F5486D06958C20f8C39A7aBe87bf8F",
+          "strategies": {
+            "StrategyAddAllBaseToken": "0xf63A23D87196Ff07403Cdee67215c6a7767033a7",
+            "StrategyLiquidate": "0x256b663332D00C1089104738560523Be3D615055",
+            "StrategyAddTwoSidesOptimal": "0xa4df341FE2BDDF5fF09824C43EfFce09723a334F",
+            "StrategyWithdrawMinimizeTrading": "0x729B7C248FdE6ebdd13AB5fF0835C497C077972A",
+            "StrategyPartialCloseLiquidate": "0x6b79878A402B9Da9fbA50D32e26e241dF62b2EfE",
+            "StrategyPartialCloseMinimizeTrading": "0x89812Dfc1EA7B990609d818466272c0FFeF44646"
+          }
         }
       ]
     },
@@ -593,6 +666,23 @@
           "name": "USDC-USDC.e TraderJoeWorker",
           "address": "0x8D49EFC29711D23D5833e65DB908cFbEE1A2BA39",
           "deployedBlock": 15182063,
+          "config": "0x3610bf1C74a168BbA676a6a80BeBC9AA30194F35",
+          "pId": 8,
+          "stakingToken": "0x2a8a315e82f85d1f0658c5d66a452bbdd9356783",
+          "stakingTokenAt": "0x4483f0b6e2F5486D06958C20f8C39A7aBe87bf8F",
+          "strategies": {
+            "StrategyAddAllBaseToken": "0xf63A23D87196Ff07403Cdee67215c6a7767033a7",
+            "StrategyLiquidate": "0x256b663332D00C1089104738560523Be3D615055",
+            "StrategyAddTwoSidesOptimal": "0x75F793405951b294f4114D645Aa83dfd8117F1EF",
+            "StrategyWithdrawMinimizeTrading": "0x729B7C248FdE6ebdd13AB5fF0835C497C077972A",
+            "StrategyPartialCloseLiquidate": "0x6b79878A402B9Da9fbA50D32e26e241dF62b2EfE",
+            "StrategyPartialCloseMinimizeTrading": "0x89812Dfc1EA7B990609d818466272c0FFeF44646"
+          }
+        },
+        {
+          "name": "USDC-USDC.e BO4.5 TDJ8 DeltaNeutralTraderJoeWorker",
+          "address": "0x58eA3d0771662683A979d820cFf3016EB63aDC74",
+          "deployedBlock": 19126059,
           "config": "0x3610bf1C74a168BbA676a6a80BeBC9AA30194F35",
           "pId": 8,
           "stakingToken": "0x2a8a315e82f85d1f0658c5d66a452bbdd9356783",
@@ -714,6 +804,74 @@
           "pId": 58,
           "stakingToken": "0x67926d973cd8ee876ad210faaf7dffa99e414acf",
           "stakingTokenAt": "0xd6a4F121CA35509aF06A0Be99093d08462f53052",
+          "strategies": {
+            "StrategyAddAllBaseToken": "0xf63A23D87196Ff07403Cdee67215c6a7767033a7",
+            "StrategyLiquidate": "0x256b663332D00C1089104738560523Be3D615055",
+            "StrategyAddTwoSidesOptimal": "0xF0ad38527A53ABC723e200C2e310eB4ABcFd3424",
+            "StrategyWithdrawMinimizeTrading": "0x729B7C248FdE6ebdd13AB5fF0835C497C077972A",
+            "StrategyPartialCloseLiquidate": "0x6b79878A402B9Da9fbA50D32e26e241dF62b2EfE",
+            "StrategyPartialCloseMinimizeTrading": "0x89812Dfc1EA7B990609d818466272c0FFeF44646"
+          }
+        },
+        {
+          "name": "USDC.e-WAVAX H3 TDJ3 DeltaNeutralTraderJoeWorker",
+          "address": "0x6543221C96298DbfaE7D85fc2aA06eD30AE0a3A8",
+          "deployedBlock": 16359671,
+          "config": "0x3610bf1C74a168BbA676a6a80BeBC9AA30194F35",
+          "pId": 3,
+          "stakingToken": "0xa389f9430876455c36478deea9769b7ca4e3ddb1",
+          "stakingTokenAt": "0x4483f0b6e2F5486D06958C20f8C39A7aBe87bf8F",
+          "strategies": {
+            "StrategyAddAllBaseToken": "0xf63A23D87196Ff07403Cdee67215c6a7767033a7",
+            "StrategyLiquidate": "0x256b663332D00C1089104738560523Be3D615055",
+            "StrategyAddTwoSidesOptimal": "0xF0ad38527A53ABC723e200C2e310eB4ABcFd3424",
+            "StrategyWithdrawMinimizeTrading": "0x729B7C248FdE6ebdd13AB5fF0835C497C077972A",
+            "StrategyPartialCloseLiquidate": "0x6b79878A402B9Da9fbA50D32e26e241dF62b2EfE",
+            "StrategyPartialCloseMinimizeTrading": "0x89812Dfc1EA7B990609d818466272c0FFeF44646"
+          }
+        },
+        {
+          "name": "USDC.e-WETH.e T2 TDJ6 DeltaNeutralTraderJoeWorker",
+          "address": "0x93a8F6bEE2599D617002cFB851F9725F52eE6491",
+          "deployedBlock": 16738235,
+          "config": "0x3610bf1C74a168BbA676a6a80BeBC9AA30194F35",
+          "pId": 55,
+          "stakingToken": "0x199fb78019a08af2cb6a078409d0c8233eba8a0c",
+          "stakingTokenAt": "0xd6a4F121CA35509aF06A0Be99093d08462f53052",
+          "strategies": {
+            "StrategyAddAllBaseToken": "0xf63A23D87196Ff07403Cdee67215c6a7767033a7",
+            "StrategyLiquidate": "0x256b663332D00C1089104738560523Be3D615055",
+            "StrategyAddTwoSidesOptimal": "0xF0ad38527A53ABC723e200C2e310eB4ABcFd3424",
+            "StrategyWithdrawMinimizeTrading": "0x729B7C248FdE6ebdd13AB5fF0835C497C077972A",
+            "StrategyPartialCloseLiquidate": "0x6b79878A402B9Da9fbA50D32e26e241dF62b2EfE",
+            "StrategyPartialCloseMinimizeTrading": "0x89812Dfc1EA7B990609d818466272c0FFeF44646"
+          }
+        },
+        {
+          "name": "USDC.e-WAVAX T2 TDJ7 DeltaNeutralTraderJoeWorker",
+          "address": "0x8C1F8AA9a1F015d6414134876784C6979d543473",
+          "deployedBlock": 17857169,
+          "config": "0x3610bf1C74a168BbA676a6a80BeBC9AA30194F35",
+          "pId": 3,
+          "stakingToken": "0xa389f9430876455c36478deea9769b7ca4e3ddb1",
+          "stakingTokenAt": "0x4483f0b6e2F5486D06958C20f8C39A7aBe87bf8F",
+          "strategies": {
+            "StrategyAddAllBaseToken": "0xf63A23D87196Ff07403Cdee67215c6a7767033a7",
+            "StrategyLiquidate": "0x256b663332D00C1089104738560523Be3D615055",
+            "StrategyAddTwoSidesOptimal": "0xF0ad38527A53ABC723e200C2e310eB4ABcFd3424",
+            "StrategyWithdrawMinimizeTrading": "0x729B7C248FdE6ebdd13AB5fF0835C497C077972A",
+            "StrategyPartialCloseLiquidate": "0x6b79878A402B9Da9fbA50D32e26e241dF62b2EfE",
+            "StrategyPartialCloseMinimizeTrading": "0x89812Dfc1EA7B990609d818466272c0FFeF44646"
+          }
+        },
+        {
+          "name": "USDC.e-USDC BO4.5 TDJ8 DeltaNeutralTraderJoeWorker",
+          "address": "0xE93F65Aa9c045193809993072b01ACB432d406B0",
+          "deployedBlock": 19126102,
+          "config": "0x3610bf1C74a168BbA676a6a80BeBC9AA30194F35",
+          "pId": 8,
+          "stakingToken": "0x2a8a315e82f85d1f0658c5d66a452bbdd9356783",
+          "stakingTokenAt": "0x4483f0b6e2F5486D06958C20f8C39A7aBe87bf8F",
           "strategies": {
             "StrategyAddAllBaseToken": "0xf63A23D87196Ff07403Cdee67215c6a7767033a7",
             "StrategyLiquidate": "0x256b663332D00C1089104738560523Be3D615055",
@@ -886,6 +1044,23 @@
             "StrategyPartialCloseLiquidate": "0x6b79878A402B9Da9fbA50D32e26e241dF62b2EfE",
             "StrategyPartialCloseMinimizeTrading": "0x89812Dfc1EA7B990609d818466272c0FFeF44646"
           }
+        },
+        {
+          "name": "DAI.e-WAVAX H3 TDJ2 DeltaNeutralTraderJoeWorker",
+          "address": "0x4bEc3FAaADf337e76398b178C353f3f7c9E63a12",
+          "deployedBlock": 16359581,
+          "config": "0x3610bf1C74a168BbA676a6a80BeBC9AA30194F35",
+          "pId": 37,
+          "stakingToken": "0x87dee1cc9ffd464b79e058ba20387c1984aed86a",
+          "stakingTokenAt": "0xd6a4F121CA35509aF06A0Be99093d08462f53052",
+          "strategies": {
+            "StrategyAddAllBaseToken": "0xf63A23D87196Ff07403Cdee67215c6a7767033a7",
+            "StrategyLiquidate": "0x256b663332D00C1089104738560523Be3D615055",
+            "StrategyAddTwoSidesOptimal": "0xb32eb106d9F21c87317c7B629C91Af10a425D728",
+            "StrategyWithdrawMinimizeTrading": "0x729B7C248FdE6ebdd13AB5fF0835C497C077972A",
+            "StrategyPartialCloseLiquidate": "0x6b79878A402B9Da9fbA50D32e26e241dF62b2EfE",
+            "StrategyPartialCloseMinimizeTrading": "0x89812Dfc1EA7B990609d818466272c0FFeF44646"
+          }
         }
       ]
     },
@@ -974,6 +1149,132 @@
       "oracle": "0x275AD57cc734B241C6CA1a3669DDeD34f82C5e4B",
       "assetVaultPosId": "3",
       "stableVaultPosId": "1"
+    },
+    {
+      "name": "Hedge 3 WAVAX-DAI.e TDJ2",
+      "symbol": "H3-WAVAXDAI.e-TDJ2",
+      "address": "0xaee8397a61E38F182C8aa6e82ab4ddc1cb3653AE",
+      "deployedBlock": 16360084,
+      "config": "0xE1B0eeEA8b373D0ea0a24A7ADF13F78B84407141",
+      "lpToken": "0x87dee1cc9ffd464b79e058ba20387c1984aed86a",
+      "assetToken": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "stableToken": "0xd586e7f844cea2f87f50152665bcbc2c279d8d70",
+      "assetVault": "0xb579B20bE4EC7b3171cC18514617197dc0843C59",
+      "stableVault": "0xE0bB77622dd1CcF6E1ABA861D6A22B2e27590556",
+      "assetDeltaWorker": "0x0D5c79ca0D8E7D601B8d5b179D2AD88d07eB6799",
+      "stableDeltaWorker": "0x4bEc3FAaADf337e76398b178C353f3f7c9E63a12",
+      "gateway": "0xff45F19D9e15fD8D9E8647b4769d6704Db8d2E97",
+      "oracle": "0x275AD57cc734B241C6CA1a3669DDeD34f82C5e4B",
+      "assetVaultPosId": "22",
+      "stableVaultPosId": "6"
+    },
+    {
+      "name": "Hedge 3 WAVAX-USDC.e TDJ3",
+      "symbol": "H3-WAVAXUSDC.e-TDJ3",
+      "address": "0x27A3a8C439d4Ce97426fbce24226B262f71DF157",
+      "deployedBlock": 16360092,
+      "config": "0xa801Ae82ce964D7ceb8a2b6aC0CB1ae534E29250",
+      "lpToken": "0xa389f9430876455c36478deea9769b7ca4e3ddb1",
+      "assetToken": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "stableToken": "0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664",
+      "assetVault": "0xb579B20bE4EC7b3171cC18514617197dc0843C59",
+      "stableVault": "0x0B82034cB1aA2Cfc5011fC4ecEbf782f9D646827",
+      "assetDeltaWorker": "0xde1Bd3FFB14F2bee73cf5d31493ef5e404643f8A",
+      "stableDeltaWorker": "0x6543221C96298DbfaE7D85fc2aA06eD30AE0a3A8",
+      "gateway": "0xB4052b6E7247Ba2cD77bC7d6FdC91a974598F65B",
+      "oracle": "0x275AD57cc734B241C6CA1a3669DDeD34f82C5e4B",
+      "assetVaultPosId": "23",
+      "stableVaultPosId": "4"
+    },
+    {
+      "name": "Balanced 2 WAVAX-DAI.e TDJ4",
+      "symbol": "B2-WAVAXDAI.e-TDJ4",
+      "address": "0x2D6027b3AD7175751fEed928C66320634c8a9771",
+      "deployedBlock": 16661499,
+      "config": "0x88cF5B9d1C2121c77161E909dbc16060a2C545fE",
+      "lpToken": "0x87dee1cc9ffd464b79e058ba20387c1984aed86a",
+      "assetToken": "0xd586e7f844cea2f87f50152665bcbc2c279d8d70",
+      "stableToken": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "assetVault": "0x0000000000000000000000000000000000000000",
+      "stableVault": "0xb579B20bE4EC7b3171cC18514617197dc0843C59",
+      "assetDeltaWorker": "0x0000000000000000000000000000000000000000",
+      "stableDeltaWorker": "0xc8637954467B758ed1FA8B51f1Fef9E1F28642C1",
+      "gateway": "0xE5f514563D1b600CAabFA7e3ad242fbE927575C1",
+      "oracle": "0x275AD57cc734B241C6CA1a3669DDeD34f82C5e4B",
+      "assetVaultPosId": "-1",
+      "stableVaultPosId": "24"
+    },
+    {
+      "name": "Balanced 2 WAVAX-USDC.e TDJ5",
+      "symbol": "B2-WAVAXUSDC.e-TDJ5",
+      "address": "0x7A87B90fEcDCf63a7467691468B71003C12D35FB",
+      "deployedBlock": 16661508,
+      "config": "0x49EC35C92D2Fca9C31C05a9a0cFF3D23db2f86A1",
+      "lpToken": "0xa389f9430876455c36478deea9769b7ca4e3ddb1",
+      "assetToken": "0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664",
+      "stableToken": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "assetVault": "0x0000000000000000000000000000000000000000",
+      "stableVault": "0xb579B20bE4EC7b3171cC18514617197dc0843C59",
+      "assetDeltaWorker": "0x0000000000000000000000000000000000000000",
+      "stableDeltaWorker": "0xCF0F332cc21165Cd6EF7a772d94341455946c18f",
+      "gateway": "0xB65F49Baa5bC123CC997b5c7978bFF06a965F873",
+      "oracle": "0x275AD57cc734B241C6CA1a3669DDeD34f82C5e4B",
+      "assetVaultPosId": "-1",
+      "stableVaultPosId": "25"
+    },
+    {
+      "name": "Trend 2 USDC.e-WETH.e TDJ6",
+      "symbol": "T2-USDC.eWETH.e-TDJ6",
+      "address": "0xF849672d840b286C580Fcc3D16D2B0cb40719aF2",
+      "deployedBlock": 16738450,
+      "config": "0xF453ECb8bE7fb234783Ac1F58e543df5B06220F6",
+      "lpToken": "0x199fb78019a08af2cb6a078409d0c8233eba8a0c",
+      "assetToken": "0x49D5c2BdFfac6CE2BFdB6640F4F80f226bc10bAB",
+      "stableToken": "0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664",
+      "assetVault": "0x0000000000000000000000000000000000000000",
+      "stableVault": "0x0B82034cB1aA2Cfc5011fC4ecEbf782f9D646827",
+      "assetDeltaWorker": "0x0000000000000000000000000000000000000000",
+      "stableDeltaWorker": "0x93a8F6bEE2599D617002cFB851F9725F52eE6491",
+      "gateway": "0x7bb3eA24965E62be02F0186c6118Cc0CcD345DB4",
+      "oracle": "0x275AD57cc734B241C6CA1a3669DDeD34f82C5e4B",
+      "assetVaultPosId": "-1",
+      "stableVaultPosId": "5"
+    },
+    {
+      "name": "Trend 2 USDC.e-WAVAX TDJ7",
+      "symbol": "T2-USDC.eWAVAX-TDJ7",
+      "address": "0x09731CFf987E9Fd124Ae70E9135892f2a5fC543D",
+      "deployedBlock": 17857323,
+      "config": "0x66C678A8C41FD68eCbc3c08d43557B73D7C376F0",
+      "lpToken": "0xa389f9430876455c36478deea9769b7ca4e3ddb1",
+      "assetToken": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
+      "stableToken": "0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664",
+      "assetVault": "0x0000000000000000000000000000000000000000",
+      "stableVault": "0x0B82034cB1aA2Cfc5011fC4ecEbf782f9D646827",
+      "assetDeltaWorker": "0x0000000000000000000000000000000000000000",
+      "stableDeltaWorker": "0x8C1F8AA9a1F015d6414134876784C6979d543473",
+      "gateway": "0xc19c9F16fBb13B0bC16B8D631458Ab108960f4bC",
+      "oracle": "0x275AD57cc734B241C6CA1a3669DDeD34f82C5e4B",
+      "assetVaultPosId": "-1",
+      "stableVaultPosId": "6"
+    },
+    {
+      "name": "Bond 4.5 USDC-USDC.e TDJ8",
+      "symbol": "BO4.5-USDCUSDC.e-TDJ8",
+      "address": "0x802FaeBb10C08A4fB7f0a58f3365ba0E2ac50b4D",
+      "deployedBlock": 19126347,
+      "config": "0x5826024a1949F2e54621DD70d8F2cdafAB2ffD59",
+      "lpToken": "0x2a8a315e82f85d1f0658c5d66a452bbdd9356783",
+      "assetToken": "0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664",
+      "stableToken": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+      "assetVault": "0x0B82034cB1aA2Cfc5011fC4ecEbf782f9D646827",
+      "stableVault": "0x08d21849E5d2aDc29674D07dD436458Dd7ce9d92",
+      "assetDeltaWorker": "0xE93F65Aa9c045193809993072b01ACB432d406B0",
+      "stableDeltaWorker": "0x58eA3d0771662683A979d820cFf3016EB63aDC74",
+      "gateway": "0xaa6CB45148300b7b2412F6986C761A2070Ac55b5",
+      "oracle": "0x275AD57cc734B241C6CA1a3669DDeD34f82C5e4B",
+      "assetVaultPosId": "7",
+      "stableVaultPosId": "3"
     }
   ]
 }

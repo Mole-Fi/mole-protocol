@@ -1,0 +1,696 @@
+{
+    "Publisher": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+    "Caller": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+    "Oracle": {
+      "SwitchboardOracle": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+      "OracleMedianizer": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+      "DeltaNeutralOracle": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d"
+    },
+    "Exchanges": {
+      "Pancake": {
+        "pancake": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa",
+        "master_chef": "0x7968a225eba6c99f5f1070aeec1b405757dee939eabcfda43ba91588bf5fccf3",
+        "LpTokens": [
+          {
+            "pId": 4,
+            "name": "lzUSDC-lzUSDT LP",
+            "address": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken<0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC, 0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDT>",
+            "masterChef": "0x7968a225eba6c99f5f1070aeec1b405757dee939eabcfda43ba91588bf5fccf3",
+            "lpToken": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken",
+            "token0": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC",
+            "token1": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDT"
+          },
+          {
+            "pId": 5,
+            "name": "lzUSDC-lzWETH LP",
+            "address": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken<0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC, 0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::WETH>",
+            "masterChef": "0x7968a225eba6c99f5f1070aeec1b405757dee939eabcfda43ba91588bf5fccf3",
+            "lpToken": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken",
+            "token0": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC",
+            "token1": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::WETH"
+          },
+          {
+            "pId": 6,
+            "name": "APT-lzUSDC LP",
+            "address": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken<0x1::aptos_coin::AptosCoin, 0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC>",
+            "masterChef": "0x7968a225eba6c99f5f1070aeec1b405757dee939eabcfda43ba91588bf5fccf3",
+            "lpToken": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken",
+            "token0": "0x1::aptos_coin::AptosCoin",
+            "token1": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC"
+          },
+          {
+            "pId": 7,
+            "name": "ceUSDC-ceUSDT LP",
+            "address": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken<0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdcCoin, 0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdtCoin>",
+            "masterChef": "0x7968a225eba6c99f5f1070aeec1b405757dee939eabcfda43ba91588bf5fccf3",
+            "lpToken": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken",
+            "token0": "0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdcCoin",
+            "token1": "0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdtCoin"
+          },
+          {
+            "pId": 8,
+            "name": "ceUSDC-ceWETH LP",
+            "address": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken<0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdcCoin, 0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::WethCoin>",
+            "masterChef": "0x7968a225eba6c99f5f1070aeec1b405757dee939eabcfda43ba91588bf5fccf3",
+            "lpToken": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken",
+            "token0": "0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdcCoin",
+            "token1": "0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::WethCoin"
+          },
+          {
+            "pId": 10,
+            "name": "APT-ceUSDC LP",
+            "address": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken<0x1::aptos_coin::AptosCoin, 0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdcCoin>",
+            "masterChef": "0x7968a225eba6c99f5f1070aeec1b405757dee939eabcfda43ba91588bf5fccf3",
+            "lpToken": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken",
+            "token0": "0x1::aptos_coin::AptosCoin",
+            "token1": "0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdcCoin"
+          },
+          {
+            "pId": 11,
+            "name": "whUSDC-whBUSD LP",
+            "address": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken<0x5e156f1207d0ebfa19a9eeff00d62a282278fb8719f4fab3a586a0a2c0fffbea::coin::T, 0xccc9620d38c4f3991fa68a03ad98ef3735f18d04717cb75d7a1300dd8a7eed75::coin::T>",
+            "masterChef": "0x7968a225eba6c99f5f1070aeec1b405757dee939eabcfda43ba91588bf5fccf3",
+            "lpToken": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken",
+            "token0": "0x5e156f1207d0ebfa19a9eeff00d62a282278fb8719f4fab3a586a0a2c0fffbea::coin::T",
+            "token1": "0xccc9620d38c4f3991fa68a03ad98ef3735f18d04717cb75d7a1300dd8a7eed75::coin::T"
+          },
+          {
+            "pId": 12,
+            "name": "whUSDC-whWETH LP",
+            "address": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken<0x5e156f1207d0ebfa19a9eeff00d62a282278fb8719f4fab3a586a0a2c0fffbea::coin::T, 0xcc8a89c8dce9693d354449f1f73e60e14e347417854f029db5bc8e7454008abb::coin::T>",
+            "masterChef": "0x7968a225eba6c99f5f1070aeec1b405757dee939eabcfda43ba91588bf5fccf3",
+            "lpToken": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken",
+            "token0": "0x5e156f1207d0ebfa19a9eeff00d62a282278fb8719f4fab3a586a0a2c0fffbea::coin::T",
+            "token1": "0xcc8a89c8dce9693d354449f1f73e60e14e347417854f029db5bc8e7454008abb::coin::T"
+          },
+          {
+            "pId": 13,
+            "name": "APT-whUSDC LP",
+            "address": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken<0x1::aptos_coin::AptosCoin, 0x5e156f1207d0ebfa19a9eeff00d62a282278fb8719f4fab3a586a0a2c0fffbea::coin::T>",
+            "masterChef": "0x7968a225eba6c99f5f1070aeec1b405757dee939eabcfda43ba91588bf5fccf3",
+            "lpToken": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken",
+            "token0": "0x1::aptos_coin::AptosCoin",
+            "token1": "0x5e156f1207d0ebfa19a9eeff00d62a282278fb8719f4fab3a586a0a2c0fffbea::coin::T"
+          }
+        ]
+      }
+    },
+    "Tokens": {
+      "APT": "0x1::aptos_coin::AptosCoin",
+      "MOLE": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::mole_coin::MoleCoin",
+      "USD": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::delta_neutral_oracle::USD",
+      "CAKE": "0x159df6b7689437016108a019fd5bef736bac692b6d4a1f10c941f6fbb9a74ca6::oft::CakeOFT",
+      "lzUSDC": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC",
+      "lzWETH": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::WETH",
+      "lzUSDT": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDT",
+      "whUSDC": "0x5e156f1207d0ebfa19a9eeff00d62a282278fb8719f4fab3a586a0a2c0fffbea::coin::T",
+      "whWETH": "0xcc8a89c8dce9693d354449f1f73e60e14e347417854f029db5bc8e7454008abb::coin::T",
+      "whBUSD": "0xccc9620d38c4f3991fa68a03ad98ef3735f18d04717cb75d7a1300dd8a7eed75::coin::T",
+      "ceUSDC": "0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdcCoin",
+      "ceWETH": "0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::WethCoin",
+      "ceUSDT": "0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdtCoin"
+    },
+    "SharedConfig": {
+      "TripleSlopeModel": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+      "WorkerConfig": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d"
+    },
+    "FairLaunch": {
+      "address": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+      "pools": [
+        {
+          "id": 0,
+          "stakingToken": "Magic APT",
+          "address": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::vault::MagicCoin<0x1::aptos_coin::AptosCoin>"
+        },
+        {
+          "id": 1,
+          "stakingToken": "Debt APT",
+          "address": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::vault::DebtCoin<0x1::aptos_coin::AptosCoin>"
+        },
+        {
+          "id": 2,
+          "stakingToken": "Magic lzUSDC",
+          "address": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::vault::MagicCoin<0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC>"
+        },
+        {
+          "id": 3,
+          "stakingToken": "Debt lzUSDC",
+          "address": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::vault::DebtCoin<0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC>"
+        },
+        {
+          "id": 4,
+          "stakingToken": "Magic lzWETH",
+          "address": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::vault::MagicCoin<0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::WETH>"
+        },
+        {
+          "id": 5,
+          "stakingToken": "Debt lzWETH",
+          "address": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::vault::DebtCoin<0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::WETH>"
+        },
+        {
+          "id": 6,
+          "stakingToken": "Magic lzUSDT",
+          "address": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::vault::MagicCoin<0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDT>"
+        },
+        {
+          "id": 7,
+          "stakingToken": "Debt lzUSDT",
+          "address": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::vault::DebtCoin<0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDT>"
+        },
+        {
+          "id": 8,
+          "stakingToken": "Magic ceUSDC",
+          "address": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::vault::MagicCoin<0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdcCoin>"
+        },
+        {
+          "id": 9,
+          "stakingToken": "Debt ceUSDC",
+          "address": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::vault::DebtCoin<0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdcCoin>"
+        },
+        {
+          "id": 10,
+          "stakingToken": "Magic ceWETH",
+          "address": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::vault::MagicCoin<0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::WethCoin>"
+        },
+        {
+          "id": 11,
+          "stakingToken": "Debt ceWETH",
+          "address": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::vault::DebtCoin<0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::WethCoin>"
+        },
+        {
+          "id": 12,
+          "stakingToken": "Magic ceUSDT",
+          "address": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::vault::MagicCoin<0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdtCoin>"
+        },
+        {
+          "id": 13,
+          "stakingToken": "Debt ceUSDT",
+          "address": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::vault::DebtCoin<0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdtCoin>"
+        },
+        {
+          "id": 14,
+          "stakingToken": "Magic whUSDC",
+          "address": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::vault::MagicCoin<0x5e156f1207d0ebfa19a9eeff00d62a282278fb8719f4fab3a586a0a2c0fffbea::coin::T>"
+        },
+        {
+          "id": 15,
+          "stakingToken": "Debt whUSDC",
+          "address": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::vault::DebtCoin<0x5e156f1207d0ebfa19a9eeff00d62a282278fb8719f4fab3a586a0a2c0fffbea::coin::T>"
+        }
+      ]
+    },
+    "Vaults": [
+      {
+        "name": "APT Vault",
+        "symbol": "mAPT",
+        "address": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+        "baseToken": "0x1::aptos_coin::AptosCoin",
+        "magicToken": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::vault::MagicCoin<0x1::aptos_coin::AptosCoin>",
+        "debtToken": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::vault::DebtCoin<0x1::aptos_coin::AptosCoin>",
+        "config": "0x7e4320cb39f5abf717a53053c9ad59d35b8ac1e0cf83d72ec45462d6a85d54c7",
+        "tripleSlopeModel": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+        "workers": [
+          {
+            "name": "APT-lzUSDC PancakeWorker",
+            "address": "0x88367f51955f2aa52a7fd5d6ef99dacbfa8565d5de2680e15d5062881f8cb1af",
+            "config": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+            "baseToken": "0x1::aptos_coin::AptosCoin",
+            "farmingToken": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC",
+            "pId": 6,
+            "stakingToken": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken<0x1::aptos_coin::AptosCoin, 0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC>",
+            "stakingTokenAt": "0x7968a225eba6c99f5f1070aeec1b405757dee939eabcfda43ba91588bf5fccf3",
+            "strategies": {
+              "StrategyAddAllBaseToken": 1,
+              "StrategyAddTwoSidesOptimal": 2,
+              "StrategyLiquidate": 3,
+              "StrategyWithdrawMinimizeTrading": 4,
+              "StrategyPartialCloseLiquidate": 5,
+              "StrategyPartialCloseMinimizeTrading": 6
+            }
+          },
+          {
+            "name": "APT-ceUSDC PancakeWorker",
+            "address": "0xd3cfe9539e1b37eb4ddd2a762c7ec44e823fd64948db1adeee9a18b5c6aa9b4e",
+            "config": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+            "baseToken": "0x1::aptos_coin::AptosCoin",
+            "farmingToken": "0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdcCoin",
+            "pId": 10,
+            "stakingToken": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken<0x1::aptos_coin::AptosCoin, 0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdcCoin>",
+            "stakingTokenAt": "0x7968a225eba6c99f5f1070aeec1b405757dee939eabcfda43ba91588bf5fccf3",
+            "strategies": {
+              "StrategyAddAllBaseToken": 1,
+              "StrategyAddTwoSidesOptimal": 2,
+              "StrategyLiquidate": 3,
+              "StrategyWithdrawMinimizeTrading": 4,
+              "StrategyPartialCloseLiquidate": 5,
+              "StrategyPartialCloseMinimizeTrading": 6
+            }
+          },
+          {
+            "name": "APT-whUSDC PancakeWorker",
+            "address": "0x2d4feb97db4b92eb454b8a3fdb7eb62c46604d2c6377423b68f2299b234b2758",
+            "config": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+            "baseToken": "0x1::aptos_coin::AptosCoin",
+            "farmingToken": "0x5e156f1207d0ebfa19a9eeff00d62a282278fb8719f4fab3a586a0a2c0fffbea::coin::T",
+            "pId": 13,
+            "stakingToken": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken<0x1::aptos_coin::AptosCoin, 0x5e156f1207d0ebfa19a9eeff00d62a282278fb8719f4fab3a586a0a2c0fffbea::coin::T>",
+            "stakingTokenAt": "0x7968a225eba6c99f5f1070aeec1b405757dee939eabcfda43ba91588bf5fccf3",
+            "strategies": {
+              "StrategyAddAllBaseToken": 1,
+              "StrategyAddTwoSidesOptimal": 2,
+              "StrategyLiquidate": 3,
+              "StrategyWithdrawMinimizeTrading": 4,
+              "StrategyPartialCloseLiquidate": 5,
+              "StrategyPartialCloseMinimizeTrading": 6
+            }
+          }
+        ]
+      },
+      {
+        "name": "lzUSDC Vault",
+        "symbol": "mlzUSDC",
+        "address": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+        "baseToken": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC",
+        "magicToken": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::vault::MagicCoin<0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC>",
+        "debtToken": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::vault::DebtCoin<0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC>",
+        "config": "0x12e27cf57a96831c2f8b64f4a479b3ddb055221ae553ccd759ecf098f7c21ab7",
+        "tripleSlopeModel": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+        "workers": [
+          {
+            "name": "lzUSDC-APT PancakeWorker",
+            "address": "0x3b06c994e0addfd9a33eea964457acccc489895bf45fef8bbe2de1710deed862",
+            "config": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+            "baseToken": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC",
+            "farmingToken": "0x1::aptos_coin::AptosCoin",
+            "pId": 6,
+            "stakingToken": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken<0x1::aptos_coin::AptosCoin, 0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC>",
+            "stakingTokenAt": "0x7968a225eba6c99f5f1070aeec1b405757dee939eabcfda43ba91588bf5fccf3",
+            "strategies": {
+              "StrategyAddAllBaseToken": 1,
+              "StrategyAddTwoSidesOptimal": 2,
+              "StrategyLiquidate": 3,
+              "StrategyWithdrawMinimizeTrading": 4,
+              "StrategyPartialCloseLiquidate": 5,
+              "StrategyPartialCloseMinimizeTrading": 6
+            }
+          },
+          {
+            "name": "lzUSDC-lzWETH PancakeWorker",
+            "address": "0x46096c735acfe5d021c59a8c240a9cf397fd9c4966f7712a657fef48f748db08",
+            "config": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+            "baseToken": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC",
+            "farmingToken": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::WETH",
+            "pId": 5,
+            "stakingToken": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken<0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC, 0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::WETH>",
+            "stakingTokenAt": "0x7968a225eba6c99f5f1070aeec1b405757dee939eabcfda43ba91588bf5fccf3",
+            "strategies": {
+              "StrategyAddAllBaseToken": 1,
+              "StrategyAddTwoSidesOptimal": 2,
+              "StrategyLiquidate": 3,
+              "StrategyWithdrawMinimizeTrading": 4,
+              "StrategyPartialCloseLiquidate": 5,
+              "StrategyPartialCloseMinimizeTrading": 6
+            }
+          },
+          {
+            "name": "lzUSDC-lzUSDT PancakeWorker",
+            "address": "0x889e061b57c5520ca639ab14b2c7c4731c310ab996a52e3020a5f1df77ed080e",
+            "config": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+            "baseToken": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC",
+            "farmingToken": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDT",
+            "pId": 4,
+            "stakingToken": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken<0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC, 0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDT>",
+            "stakingTokenAt": "0x7968a225eba6c99f5f1070aeec1b405757dee939eabcfda43ba91588bf5fccf3",
+            "strategies": {
+              "StrategyAddAllBaseToken": 1,
+              "StrategyAddTwoSidesOptimal": 2,
+              "StrategyLiquidate": 3,
+              "StrategyWithdrawMinimizeTrading": 4,
+              "StrategyPartialCloseLiquidate": 5,
+              "StrategyPartialCloseMinimizeTrading": 6
+            }
+          },
+          {
+            "name": "lzUSDC-lzWETH PCS2 DeltaNeutralPancakeWorker",
+            "address": "0xd9d7315910776aa1365f937f5b9e54326aaf1d412db9c922967b16b0ece3a528",
+            "config": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+            "baseToken": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC",
+            "farmingToken": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::WETH",
+            "pId": 5,
+            "stakingToken": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken<0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC, 0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::WETH>",
+            "stakingTokenAt": "0x7968a225eba6c99f5f1070aeec1b405757dee939eabcfda43ba91588bf5fccf3",
+            "strategies": {
+              "StrategyAddAllBaseToken": 1,
+              "StrategyAddTwoSidesOptimal": 2,
+              "StrategyLiquidate": 3,
+              "StrategyWithdrawMinimizeTrading": 4,
+              "StrategyPartialCloseLiquidate": 5,
+              "StrategyPartialCloseMinimizeTrading": 6
+            }
+          },
+          {
+            "name": "lzUSDC-lzWETH PCS3 DeltaNeutralPancakeWorker",
+            "address": "0xb8c281405145bb07ff2bc6493c38d963eb46e569a1bdd051777706e58f9b294b",
+            "config": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+            "baseToken": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC",
+            "farmingToken": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::WETH",
+            "pId": 5,
+            "stakingToken": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken<0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC, 0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::WETH>",
+            "stakingTokenAt": "0x7968a225eba6c99f5f1070aeec1b405757dee939eabcfda43ba91588bf5fccf3",
+            "strategies": {
+              "StrategyAddAllBaseToken": 1,
+              "StrategyAddTwoSidesOptimal": 2,
+              "StrategyLiquidate": 3,
+              "StrategyWithdrawMinimizeTrading": 4,
+              "StrategyPartialCloseLiquidate": 5,
+              "StrategyPartialCloseMinimizeTrading": 6
+            }
+          }
+        ]
+      },
+      {
+        "name": "lzWETH Vault",
+        "symbol": "mlzWETH",
+        "address": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+        "baseToken": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::WETH",
+        "magicToken": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::vault::MagicCoin<0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::WETH>",
+        "debtToken": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::vault::DebtCoin<0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::WETH>",
+        "config": "0xad08e7dab3bead11e9350e5877f5fe1d6e12c6179eae1c5a9ad67d2dfc8ce5e8",
+        "tripleSlopeModel": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+        "workers": [
+          {
+            "name": "lzWETH-lzUSDC PancakeWorker",
+            "address": "0x13b637f8c0a4554ad88548b938812cf553b314ec9fc896b747a11f7643351bfc",
+            "config": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+            "baseToken": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::WETH",
+            "farmingToken": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC",
+            "pId": 5,
+            "stakingToken": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken<0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC, 0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::WETH>",
+            "stakingTokenAt": "0x7968a225eba6c99f5f1070aeec1b405757dee939eabcfda43ba91588bf5fccf3",
+            "strategies": {
+              "StrategyAddAllBaseToken": 1,
+              "StrategyAddTwoSidesOptimal": 2,
+              "StrategyLiquidate": 3,
+              "StrategyWithdrawMinimizeTrading": 4,
+              "StrategyPartialCloseLiquidate": 5,
+              "StrategyPartialCloseMinimizeTrading": 6
+            }
+          },
+          {
+            "name": "lzWETH-lzUSDC PCS2 DeltaNeutralPancakeWorker",
+            "address": "0x432798f38ab527461023997a621d8c3ba519c4b4fba878b0e1bb4b89103e4b38",
+            "config": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+            "baseToken": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::WETH",
+            "farmingToken": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC",
+            "pId": 5,
+            "stakingToken": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken<0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC, 0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::WETH>",
+            "stakingTokenAt": "0x7968a225eba6c99f5f1070aeec1b405757dee939eabcfda43ba91588bf5fccf3",
+            "strategies": {
+              "StrategyAddAllBaseToken": 1,
+              "StrategyAddTwoSidesOptimal": 2,
+              "StrategyLiquidate": 3,
+              "StrategyWithdrawMinimizeTrading": 4,
+              "StrategyPartialCloseLiquidate": 5,
+              "StrategyPartialCloseMinimizeTrading": 6
+            }
+          },
+          {
+            "name": "lzWETH-lzUSDC PCS3 DeltaNeutralPancakeWorker",
+            "address": "0x5799f0f99287d3bb0c965f87efcc70a84eebcbe80ced480ecf97e2645ec6cb36",
+            "config": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+            "baseToken": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::WETH",
+            "farmingToken": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC",
+            "pId": 5,
+            "stakingToken": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken<0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC, 0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::WETH>",
+            "stakingTokenAt": "0x7968a225eba6c99f5f1070aeec1b405757dee939eabcfda43ba91588bf5fccf3",
+            "strategies": {
+              "StrategyAddAllBaseToken": 1,
+              "StrategyAddTwoSidesOptimal": 2,
+              "StrategyLiquidate": 3,
+              "StrategyWithdrawMinimizeTrading": 4,
+              "StrategyPartialCloseLiquidate": 5,
+              "StrategyPartialCloseMinimizeTrading": 6
+            }
+          }
+        ]
+      },
+      {
+        "name": "lzUSDT Vault",
+        "symbol": "mlzUSDT",
+        "address": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+        "baseToken": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDT",
+        "magicToken": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::vault::MagicCoin<0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDT>",
+        "debtToken": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::vault::DebtCoin<0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDT>",
+        "config": "0x8ae90bbd4c56378b164f78b95e572e2211031cb8e0bc4b589b80331b92dbc424",
+        "tripleSlopeModel": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+        "workers": [
+          {
+            "name": "lzUSDT-lzUSDC PancakeWorker",
+            "address": "0x7e3c0c184584b5045f60b16e531ee81f09930660cbe75bac25214c269b1ac24e",
+            "config": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+            "baseToken": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDT",
+            "farmingToken": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC",
+            "pId": 4,
+            "stakingToken": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken<0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC, 0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDT>",
+            "stakingTokenAt": "0x7968a225eba6c99f5f1070aeec1b405757dee939eabcfda43ba91588bf5fccf3",
+            "strategies": {
+              "StrategyAddAllBaseToken": 1,
+              "StrategyAddTwoSidesOptimal": 2,
+              "StrategyLiquidate": 3,
+              "StrategyWithdrawMinimizeTrading": 4,
+              "StrategyPartialCloseLiquidate": 5,
+              "StrategyPartialCloseMinimizeTrading": 6
+            }
+          }
+        ]
+      },
+      {
+        "name": "ceUSDC Vault",
+        "symbol": "mceUSDC",
+        "address": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+        "baseToken": "0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdcCoin",
+        "magicToken": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::vault::MagicCoin<0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdcCoin>",
+        "debtToken": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::vault::DebtCoin<0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdcCoin>",
+        "config": "0x94d60822a485307ebc5c8e3554180f1e80c934d8155875b4918ce70935e99922",
+        "tripleSlopeModel": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+        "workers": [
+          {
+            "name": "ceUSDC-ceUSDT PancakeWorker",
+            "address": "0x1c515f059b08635121f1985422d7043db27f8dbce792547bb8c6b7cd204fe9b2",
+            "config": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+            "baseToken": "0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdcCoin",
+            "farmingToken": "0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdtCoin",
+            "pId": 7,
+            "stakingToken": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken<0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdcCoin, 0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdtCoin>",
+            "stakingTokenAt": "0x7968a225eba6c99f5f1070aeec1b405757dee939eabcfda43ba91588bf5fccf3",
+            "strategies": {
+              "StrategyAddAllBaseToken": 1,
+              "StrategyAddTwoSidesOptimal": 2,
+              "StrategyLiquidate": 3,
+              "StrategyWithdrawMinimizeTrading": 4,
+              "StrategyPartialCloseLiquidate": 5,
+              "StrategyPartialCloseMinimizeTrading": 6
+            }
+          },
+          {
+            "name": "ceUSDC-ceWETH PancakeWorker",
+            "address": "0x243f0fcd7d7dde0e36253ca86735af5131a01c2b351d056e9d73d165a3e0a561",
+            "config": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+            "baseToken": "0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdcCoin",
+            "farmingToken": "0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::WethCoin",
+            "pId": 8,
+            "stakingToken": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken<0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdcCoin, 0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::WethCoin>",
+            "stakingTokenAt": "0x7968a225eba6c99f5f1070aeec1b405757dee939eabcfda43ba91588bf5fccf3",
+            "strategies": {
+              "StrategyAddAllBaseToken": 1,
+              "StrategyAddTwoSidesOptimal": 2,
+              "StrategyLiquidate": 3,
+              "StrategyWithdrawMinimizeTrading": 4,
+              "StrategyPartialCloseLiquidate": 5,
+              "StrategyPartialCloseMinimizeTrading": 6
+            }
+          },
+          {
+            "name": "ceUSDC-APT PancakeWorker",
+            "address": "0x8f2263da92b3b0b53ee74bdc752ecd9e1f1460f86d1a95bfca9a1dc58ce2e911",
+            "config": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+            "baseToken": "0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdcCoin",
+            "farmingToken": "0x1::aptos_coin::AptosCoin",
+            "pId": 10,
+            "stakingToken": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken<0x1::aptos_coin::AptosCoin, 0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdcCoin>",
+            "stakingTokenAt": "0x7968a225eba6c99f5f1070aeec1b405757dee939eabcfda43ba91588bf5fccf3",
+            "strategies": {
+              "StrategyAddAllBaseToken": 1,
+              "StrategyAddTwoSidesOptimal": 2,
+              "StrategyLiquidate": 3,
+              "StrategyWithdrawMinimizeTrading": 4,
+              "StrategyPartialCloseLiquidate": 5,
+              "StrategyPartialCloseMinimizeTrading": 6
+            }
+          }
+        ]
+      },
+      {
+        "name": "ceWETH Vault",
+        "symbol": "mceWETH",
+        "address": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+        "baseToken": "0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::WethCoin",
+        "magicToken": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::vault::MagicCoin<0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::WethCoin>",
+        "debtToken": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::vault::DebtCoin<0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::WethCoin>",
+        "config": "0x78af56121c7c8ff75f892d91f8756a040bbe2e250996a853faa3dc7daf157475",
+        "tripleSlopeModel": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+        "workers": [
+          {
+            "name": "ceWETH-ceUSDC PancakeWorker",
+            "address": "0x611b3cefdd7b89e4e6231ec985d25679b24dece05934883848062c68f333aef7",
+            "config": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+            "baseToken": "0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::WethCoin",
+            "farmingToken": "0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdcCoin",
+            "pId": 8,
+            "stakingToken": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken<0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdcCoin, 0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::WethCoin>",
+            "stakingTokenAt": "0x7968a225eba6c99f5f1070aeec1b405757dee939eabcfda43ba91588bf5fccf3",
+            "strategies": {
+              "StrategyAddAllBaseToken": 1,
+              "StrategyAddTwoSidesOptimal": 2,
+              "StrategyLiquidate": 3,
+              "StrategyWithdrawMinimizeTrading": 4,
+              "StrategyPartialCloseLiquidate": 5,
+              "StrategyPartialCloseMinimizeTrading": 6
+            }
+          }
+        ]
+      },
+      {
+        "name": "ceUSDT Vault",
+        "symbol": "mceUSDT",
+        "address": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+        "baseToken": "0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdtCoin",
+        "magicToken": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::vault::MagicCoin<0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdtCoin>",
+        "debtToken": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::vault::DebtCoin<0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdtCoin>",
+        "config": "0x4f459ab6c53eee4a65554ea5021c3446054a62091787dc3697c4a5407541899d",
+        "tripleSlopeModel": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+        "workers": [
+          {
+            "name": "ceUSDT-ceUSDC PancakeWorker",
+            "address": "0x568476fb9996c08d1b7b4c8609a8bbcd86110d5241d3469666e10a90e66c8e08",
+            "config": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+            "baseToken": "0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdtCoin",
+            "farmingToken": "0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdcCoin",
+            "pId": 7,
+            "stakingToken": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken<0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdcCoin, 0x8d87a65ba30e09357fa2edea2c80dbac296e5dec2b18287113500b902942929d::celer_coin_manager::UsdtCoin>",
+            "stakingTokenAt": "0x7968a225eba6c99f5f1070aeec1b405757dee939eabcfda43ba91588bf5fccf3",
+            "strategies": {
+              "StrategyAddAllBaseToken": 1,
+              "StrategyAddTwoSidesOptimal": 2,
+              "StrategyLiquidate": 3,
+              "StrategyWithdrawMinimizeTrading": 4,
+              "StrategyPartialCloseLiquidate": 5,
+              "StrategyPartialCloseMinimizeTrading": 6
+            }
+          }
+        ]
+      },
+      {
+        "name": "whUSDC Vault",
+        "symbol": "mwhUSDC",
+        "address": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+        "baseToken": "0x5e156f1207d0ebfa19a9eeff00d62a282278fb8719f4fab3a586a0a2c0fffbea::coin::T",
+        "magicToken": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::vault::MagicCoin<0x5e156f1207d0ebfa19a9eeff00d62a282278fb8719f4fab3a586a0a2c0fffbea::coin::T>",
+        "debtToken": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d::vault::DebtCoin<0x5e156f1207d0ebfa19a9eeff00d62a282278fb8719f4fab3a586a0a2c0fffbea::coin::T>",
+        "config": "0xafda766aa05e6d2ebccfb830ca5bbd843b64339c9119e29e00c22cd538eda12a",
+        "tripleSlopeModel": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+        "workers": [
+          {
+            "name": "whUSDC-whBUSD PancakeWorker",
+            "address": "0x410e6b6f9ea929539527106e15efd11badb086b7a59cd3b0503cc69fd1a040bf",
+            "config": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+            "baseToken": "0x5e156f1207d0ebfa19a9eeff00d62a282278fb8719f4fab3a586a0a2c0fffbea::coin::T",
+            "farmingToken": "0xccc9620d38c4f3991fa68a03ad98ef3735f18d04717cb75d7a1300dd8a7eed75::coin::T",
+            "pId": 11,
+            "stakingToken": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken<0x5e156f1207d0ebfa19a9eeff00d62a282278fb8719f4fab3a586a0a2c0fffbea::coin::T, 0xccc9620d38c4f3991fa68a03ad98ef3735f18d04717cb75d7a1300dd8a7eed75::coin::T>",
+            "stakingTokenAt": "0x7968a225eba6c99f5f1070aeec1b405757dee939eabcfda43ba91588bf5fccf3",
+            "strategies": {
+              "StrategyAddAllBaseToken": 1,
+              "StrategyAddTwoSidesOptimal": 2,
+              "StrategyLiquidate": 3,
+              "StrategyWithdrawMinimizeTrading": 4,
+              "StrategyPartialCloseLiquidate": 5,
+              "StrategyPartialCloseMinimizeTrading": 6
+            }
+          },
+          {
+            "name": "whUSDC-whWETH PancakeWorker",
+            "address": "0x5d9e46baf6fc4e2b0ad0a5049704c98a940d106af368d1202b07d288922fdd0d",
+            "config": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+            "baseToken": "0x5e156f1207d0ebfa19a9eeff00d62a282278fb8719f4fab3a586a0a2c0fffbea::coin::T",
+            "farmingToken": "0xcc8a89c8dce9693d354449f1f73e60e14e347417854f029db5bc8e7454008abb::coin::T",
+            "pId": 12,
+            "stakingToken": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken<0x5e156f1207d0ebfa19a9eeff00d62a282278fb8719f4fab3a586a0a2c0fffbea::coin::T, 0xcc8a89c8dce9693d354449f1f73e60e14e347417854f029db5bc8e7454008abb::coin::T>",
+            "stakingTokenAt": "0x7968a225eba6c99f5f1070aeec1b405757dee939eabcfda43ba91588bf5fccf3",
+            "strategies": {
+              "StrategyAddAllBaseToken": 1,
+              "StrategyAddTwoSidesOptimal": 2,
+              "StrategyLiquidate": 3,
+              "StrategyWithdrawMinimizeTrading": 4,
+              "StrategyPartialCloseLiquidate": 5,
+              "StrategyPartialCloseMinimizeTrading": 6
+            }
+          },
+          {
+            "name": "whUSDC-APT PancakeWorker",
+            "address": "0xe6900bee749d01127bb88da24cbf5a85cd3c7dd48f1a2509456628d8d50488ac",
+            "config": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+            "baseToken": "0x5e156f1207d0ebfa19a9eeff00d62a282278fb8719f4fab3a586a0a2c0fffbea::coin::T",
+            "farmingToken": "0x1::aptos_coin::AptosCoin",
+            "pId": 13,
+            "stakingToken": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken<0x1::aptos_coin::AptosCoin, 0x5e156f1207d0ebfa19a9eeff00d62a282278fb8719f4fab3a586a0a2c0fffbea::coin::T>",
+            "stakingTokenAt": "0x7968a225eba6c99f5f1070aeec1b405757dee939eabcfda43ba91588bf5fccf3",
+            "strategies": {
+              "StrategyAddAllBaseToken": 1,
+              "StrategyAddTwoSidesOptimal": 2,
+              "StrategyLiquidate": 3,
+              "StrategyWithdrawMinimizeTrading": 4,
+              "StrategyPartialCloseLiquidate": 5,
+              "StrategyPartialCloseMinimizeTrading": 6
+            }
+          }
+        ]
+      }
+    ],
+    "DeltaNeutralVaults": [
+      {
+        "name": "Hedge 3 lzWETH-lzUSDC PCS2",
+        "symbol": "H3-EU-P2",
+        "address": "0x25138c066f0b05e96c069e26f3815de99447f886662cb8c6c74dfc9770c6366c",
+        "config": "0xb2fa7658e186b6c501d8c0681bcc3e62fe75631f78cee305be3a92ab1ad0729b",
+        "lpToken": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken<0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC, 0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::WETH>",
+        "stableToken": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC",
+        "assetToken": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::WETH",
+        "stableVault": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+        "assetVault": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+        "stableDeltaWorker": "0xd9d7315910776aa1365f937f5b9e54326aaf1d412db9c922967b16b0ece3a528",
+        "assetDeltaWorker": "0x432798f38ab527461023997a621d8c3ba519c4b4fba878b0e1bb4b89103e4b38",
+        "gateway": "0x25138c066f0b05e96c069e26f3815de99447f886662cb8c6c74dfc9770c6366c",
+        "oracle": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+        "stableVaultPosId": "2",
+        "assetVaultPosId": "1"
+      },
+      {
+        "name": "Index 3 lzUSDC-lzWETH PCS3",
+        "symbol": "I3-UE-P3",
+        "address": "0xb192716afe0925933a540f96024b810f6f502a19c17d486ab1a11eddade0afd7",
+        "config": "0x053cc659c79d29fd8f1f105f1a40656dafb6310f2028fbe8d474630ead4ca012",
+        "lpToken": "0xc7efb4076dbe143cbcd98cfaaa929ecfc8f299203dfff63b95ccb6bfe19850fa::swap::LPToken<0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC, 0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::WETH>",
+        "stableToken": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::WETH",
+        "assetToken": "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa::asset::USDC",
+        "stableVault": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+        "assetVault": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+        "stableDeltaWorker": "0x5799f0f99287d3bb0c965f87efcc70a84eebcbe80ced480ecf97e2645ec6cb36",
+        "assetDeltaWorker": "0xb8c281405145bb07ff2bc6493c38d963eb46e569a1bdd051777706e58f9b294b",
+        "gateway": "0xb192716afe0925933a540f96024b810f6f502a19c17d486ab1a11eddade0afd7",
+        "oracle": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+        "stableVaultPosId": "2",
+        "assetVaultPosId": "3"
+      }
+    ]
+  }

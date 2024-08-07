@@ -639,7 +639,7 @@
                 {
                     "name": "USDC-USDT CetusClmmWorker",
                     "address": "0x960ab11d560f05f0ec260c7ac87074b569334713594aa02580642e029fd9dd86",
-                    "upgradeAddr": "0x7658fbd3253dc9db0eecf8bb6a49fb1ffa253dd2fd78151276455d94a03e3362",
+                    "upgradeAddr": "0x161ad4578facda47ff492898d4eb5db70a7c01f3d89c880b2a8c6c45a97edda6",
                     "workerInfo": "0xc28878cfc99628743b13eebca9bdff703daeccb285f8c6ea48120b06f4079926",
                     "config": "0x79d0b16ddeea60be054d1610f8566a2cdd5af103204f70826eb85d57f0b373a4",
                     "baseToken": "0x5d4b302506645c37ff133b98c4b50a5ae14841659738d6d733d59d0d217a93bf::coin::COIN",
@@ -778,7 +778,7 @@
                 {
                     "name": "USDT-USDC CetusClmmWorker",
                     "address": "0x9cb48aa1b41a1183ecdabde578e640e05a08170f8ca165b743ffded0b1256391",
-                    "upgradeAddr": "0x4b57ba3b519a551c6cec4e31419d081c0ad656a0484c3996beec76ec6aa58125",
+                    "upgradeAddr": "0x45322cd6e6e9a77dbbe306f94bf753e3b286df5fba6aa6450387d06d8e7d00b2",
                     "workerInfo": "0x3f99d841487141e46602424b1b4125751a2df29a23b65f6c56786f3679f2c2c1",
                     "config": "0x79d0b16ddeea60be054d1610f8566a2cdd5af103204f70826eb85d57f0b373a4",
                     "baseToken": "0xc060006111016b8a020ad5b33834984a437aaa7d3c74c18e09a95d48aceab08c::coin::COIN",

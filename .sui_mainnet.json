@@ -7,7 +7,7 @@
         "Tokens": {
             "SUI": "0x23d7315113f5b1d3ba7a83604c44b94d79f4fd69af77f804fc7f920a6dc65744",
             "USDT": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
-            "USDC": "0xeaa020c61cc479712813461ce153894a96a6c00b21ed0cfc2798d1f9a9e9c94a",
+            "wUSDC": "0xeaa020c61cc479712813461ce153894a96a6c00b21ed0cfc2798d1f9a9e9c94a",
             "WETH": "0xff61491a931112ddf1bd8147cd1b641375f79f5825126d665480874634fd0ace",
             "CETUS": "0xe5b274b2611143df055d6e7cd8d93fe1961716bcd4dca1cad87a83bc1e78c1ef",
             "HASUI": "0x6120ffcf96395c70aa77e72dcb900bf9d40dccab228efca59a17b90ce423d5e8",
@@ -18,16 +18,24 @@
     },
     "Dex": {
         "BUCK": {
-            "anotherTokenSymbol": "USDC",
+            "anotherTokenSymbol": "wUSDC",
             "pool": "0x81fe26939ed676dd766358a60445341a06cea407ca6f3671ef30f162c84126d5",
             "token0": "0xce7ff77a83ea0cb6fd39bd8748e2ec89a3f41e8efdc3f4eb123e0ca37b184db2::buck::BUCK",
             "token0Decimal": "9",
             "token1": "0x5d4b302506645c37ff133b98c4b50a5ae14841659738d6d733d59d0d217a93bf::coin::COIN",
             "token1Decimal": "6",
             "dexSymbol": "CetusClmm"
+        },
+        "USDC": {
+            "anotherTokenSymbol": "USDT",
+            "pool": "0x6bd72983b0b5a77774af8c77567bb593b418ae3cd750a5926814fcd236409aaa",
+            "token0": "0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC",
+            "token0Decimal": "6",
+            "token1": "0xc060006111016b8a020ad5b33834984a437aaa7d3c74c18e09a95d48aceab08c::coin::COIN",
+            "token1Decimal": "6",
+            "dexSymbol": "CetusClmm"
         }
     },
-
     "Publisher": "0x79d0b16ddeea60be054d1610f8566a2cdd5af103204f70826eb85d57f0b373a4",
     "Packages": {
         "Mole": "0x9ec6f17e19c5e64c8872779a635235497fd6c71f7b5c23b07f652b02a240c84a",
@@ -68,7 +76,7 @@
             "LpTokens": [
                 {
                     "pId": 0,
-                    "name": "USDC-SUI Pool",
+                    "name": "wUSDC-SUI Pool",
                     "address": "0x334bed7f6426c1a3710ef7f4d66b1225df74146372b40a64e9d0cbfc76d76e67::cetus_clmm_worker::VirtualClmmLP",
                     "pool": "0xcf994611fd4c48e277ce3ffd4d4364c914af2c3cbb05f7bf6facd371de688630",
                     "poolType": "0x1eabed72c53feb3805120a081dc15963c204dc8d091542592abaf7a35689b2fb::pool::Pool<0x5d4b302506645c37ff133b98c4b50a5ae14841659738d6d733d59d0d217a93bf::coin::COIN, 0x0000000000000000000000000000000000000000000000000000000000000002::sui::SUI>",
@@ -79,7 +87,7 @@
                 },
                 {
                     "pId": 1,
-                    "name": "USDT-USDC Pool",
+                    "name": "USDT-wUSDC Pool",
                     "address": "0x9cb48aa1b41a1183ecdabde578e640e05a08170f8ca165b743ffded0b1256391::cetus_clmm_worker::VirtualClmmLP",
                     "pool": "0xc8d7a1503dc2f9f5b05449a87d8733593e2f0f3e7bffd90541252782e4d2ca20",
                     "poolType": "0x1eabed72c53feb3805120a081dc15963c204dc8d091542592abaf7a35689b2fb::pool::Pool<0xc060006111016b8a020ad5b33834984a437aaa7d3c74c18e09a95d48aceab08c::coin::COIN, 0x5d4b302506645c37ff133b98c4b50a5ae14841659738d6d733d59d0d217a93bf::coin::COIN>",
@@ -90,7 +98,7 @@
                 },
                 {
                     "pId": 2,
-                    "name": "WETH-USDC Pool",
+                    "name": "WETH-wUSDC Pool",
                     "address": "0xb7a0d251a9f307b80b1595c87622118e401dc613591b3435786bb7c147599dae::cetus_clmm_worker::VirtualClmmLP",
                     "pool": "0x5b0b24c27ccf6d0e98f3a8704d2e577de83fa574d3a9060eb8945eeb82b3e2df",
                     "poolType": "0x1eabed72c53feb3805120a081dc15963c204dc8d091542592abaf7a35689b2fb::pool::Pool<0xaf8cd5edc19c4512f4259f0bee101a40d41ebed738ade5874359610ef8eeced5::coin::COIN, 0x5d4b302506645c37ff133b98c4b50a5ae14841659738d6d733d59d0d217a93bf::coin::COIN>",
@@ -112,7 +120,7 @@
                 },
                 {
                     "pId": 4,
-                    "name": "USDC-CETUS Pool",
+                    "name": "wUSDC-CETUS Pool",
                     "address": "0xd8528e2825b7354f5e4fd3bf89e3998e59f4cf92160d65bf491885677229def0::cetus_clmm_worker::VirtualClmmLP",
                     "pool": "0x238f7e4648e62751de29c982cbf639b4225547c31db7bd866982d7d56fc2c7a8",
                     "poolType": "0x1eabed72c53feb3805120a081dc15963c204dc8d091542592abaf7a35689b2fb::pool::Pool<0x5d4b302506645c37ff133b98c4b50a5ae14841659738d6d733d59d0d217a93bf::coin::COIN, 0x06864a6f921804860930db6ddbe2e16acdf8504495ea7481637a1c8b9a8fe54b::cetus::CETUS>",
@@ -211,7 +219,7 @@
                 },
                 {
                     "pId": 13,
-                    "name": "USDC-WBTC Pool",
+                    "name": "wUSDC-WBTC Pool",
                     "address": "0xff377a83375d63b9c8429362b5c2791bc69f0da861d3d963970ffeac2654d9d5::cetus_clmm_worker::VirtualClmmLP",
                     "pool": "0xaa57c66ba6ee8f2219376659f727f2b13d49ead66435aa99f57bb008a64a8042",
                     "poolType": "0x1eabed72c53feb3805120a081dc15963c204dc8d091542592abaf7a35689b2fb::pool::Pool<0x5d4b302506645c37ff133b98c4b50a5ae14841659738d6d733d59d0d217a93bf::coin::COIN, 0x027792d9fed7f9844eb4839566001bb6f6cb4804f66aa2da6fe1ee242d896881::coin::COIN>",
@@ -233,7 +241,7 @@
                 },
                 {
                     "pId": 15,
-                    "name": "BUCK-USDC Pool",
+                    "name": "BUCK-wUSDC Pool",
                     "address": "0xcac7d10d73c3c32f6d40031c8639dfde168e6e1c0e4a86f8d23f21db60f97c94::cetus_clmm_worker::VirtualClmmLP",
                     "pool": "0x81fe26939ed676dd766358a60445341a06cea407ca6f3671ef30f162c84126d5",
                     "poolType": "0x1eabed72c53feb3805120a081dc15963c204dc8d091542592abaf7a35689b2fb::pool::Pool<0xce7ff77a83ea0cb6fd39bd8748e2ec89a3f41e8efdc3f4eb123e0ca37b184db2::buck::BUCK, 0x5d4b302506645c37ff133b98c4b50a5ae14841659738d6d733d59d0d217a93bf::coin::COIN>",
@@ -252,6 +260,39 @@
                     "token1": "0x06864a6f921804860930db6ddbe2e16acdf8504495ea7481637a1c8b9a8fe54b::cetus::CETUS",
                     "masterChef": "",
                     "isStablePool": false
+                },
+                {
+                    "pId": 17,
+                    "name": "USDC-SUI Pool",
+                    "address": "0x1d25aa479630953f1313749759a476aa620ce65a3f2eab7a2e52a3a5e1e6e797::cetus_clmm_worker::VirtualClmmLP",
+                    "pool": "0xb8d7d9e66a60c239e7a60110efcf8de6c705580ed924d0dde141f4a0e2c90105",
+                    "poolType": "0x1eabed72c53feb3805120a081dc15963c204dc8d091542592abaf7a35689b2fb::pool::Pool<0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC, 0x0000000000000000000000000000000000000000000000000000000000000002::sui::SUI>",
+                    "token0": "0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC",
+                    "token1": "0x0000000000000000000000000000000000000000000000000000000000000002::sui::SUI",
+                    "masterChef": "",
+                    "isStablePool": false
+                },
+                {
+                    "pId": 18,
+                    "name": "USDC-USDT Pool",
+                    "address": "0xf74d70ad742dcbb0f75dc75312b3e7f2a5dd0b9f01634565289cbb6a6eb812c0::cetus_clmm_worker::VirtualClmmLP",
+                    "pool": "0x6bd72983b0b5a77774af8c77567bb593b418ae3cd750a5926814fcd236409aaa",
+                    "poolType": "0x1eabed72c53feb3805120a081dc15963c204dc8d091542592abaf7a35689b2fb::pool::Pool<0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC, 0xc060006111016b8a020ad5b33834984a437aaa7d3c74c18e09a95d48aceab08c::coin::COIN>",
+                    "token0": "0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC",
+                    "token1": "0xc060006111016b8a020ad5b33834984a437aaa7d3c74c18e09a95d48aceab08c::coin::COIN",
+                    "masterChef": "",
+                    "isStablePool": true
+                },
+                {
+                    "pId": 19,
+                    "name": "USDC-CETUS Pool",
+                    "address": "0xbeae77b098564b7e62be51527b71300759014085c8ce849f2726397a5fcc411d::cetus_clmm_worker::VirtualClmmLP",
+                    "pool": "0x3b13ac70030d587624e407bbe791160b459c48f1049e04269eb8ee731f5442b4",
+                    "poolType": "0x1eabed72c53feb3805120a081dc15963c204dc8d091542592abaf7a35689b2fb::pool::Pool<0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC, 0x06864a6f921804860930db6ddbe2e16acdf8504495ea7481637a1c8b9a8fe54b::cetus::CETUS>",
+                    "token0": "0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC",
+                    "token1": "0x06864a6f921804860930db6ddbe2e16acdf8504495ea7481637a1c8b9a8fe54b::cetus::CETUS",
+                    "masterChef": "",
+                    "isStablePool": false
                 }
             ]
         }
@@ -260,14 +301,15 @@
         "MOLE": "0x81ab0208cd5b4edb97d655fcb8ca456a078ef05a54c18b104a10e223872cb9cc::mole::MOLE",
         "SUI": "0x0000000000000000000000000000000000000000000000000000000000000002::sui::SUI",
         "USDT": "0xc060006111016b8a020ad5b33834984a437aaa7d3c74c18e09a95d48aceab08c::coin::COIN",
-        "USDC": "0x5d4b302506645c37ff133b98c4b50a5ae14841659738d6d733d59d0d217a93bf::coin::COIN",
+        "wUSDC": "0x5d4b302506645c37ff133b98c4b50a5ae14841659738d6d733d59d0d217a93bf::coin::COIN",
         "WETH": "0xaf8cd5edc19c4512f4259f0bee101a40d41ebed738ade5874359610ef8eeced5::coin::COIN",
         "CETUS": "0x06864a6f921804860930db6ddbe2e16acdf8504495ea7481637a1c8b9a8fe54b::cetus::CETUS",
         "HASUI": "0xbde4ba4c2e274a60ce15c1cfff9e5c42e41654ac8b6d906a57efa4bd3c29f47d::hasui::HASUI",
         "NAVX": "0xa99b8952d4f7d947ea77fe0ecdcc9e5fc0bcab2841d6e2a5aa00c3044e5544b5::navx::NAVX",
         "SCA": "0x7016aae72cfc67f2fadf55769c0a7dd54291a583b63051a5ed71081cce836ac6::sca::SCA",
         "WBTC": "0x027792d9fed7f9844eb4839566001bb6f6cb4804f66aa2da6fe1ee242d896881::coin::COIN",
-        "BUCK": "0xce7ff77a83ea0cb6fd39bd8748e2ec89a3f41e8efdc3f4eb123e0ca37b184db2::buck::BUCK"
+        "BUCK": "0xce7ff77a83ea0cb6fd39bd8748e2ec89a3f41e8efdc3f4eb123e0ca37b184db2::buck::BUCK",
+        "USDC": "0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC"
     },
     "FairLaunch": {
         "address": "0x1b089c63a8cfe583ba10a11258d5e83960e76a4c64adb37538cd2ac1546651af",
@@ -287,13 +329,13 @@
             },
             {
                 "id": 2,
-                "stakingToken": "Magic USDC",
+                "stakingToken": "Magic wUSDC",
                 "address": "0x5ffa69ee4ee14d899dcc750df92de12bad4bacf81efa1ae12ee76406804dda7f::vault::MagicCoin<0x5d4b302506645c37ff133b98c4b50a5ae14841659738d6d733d59d0d217a93bf::coin::COIN>",
                 "pool": "0xff7adb6a479079b9325fad4fd35993bb9d1640680538121810fe1e8da0e40e12"
             },
             {
                 "id": 3,
-                "stakingToken": "Debt USDC",
+                "stakingToken": "Debt wUSDC",
                 "address": "0x5ffa69ee4ee14d899dcc750df92de12bad4bacf81efa1ae12ee76406804dda7f::vault::DebtCoin<0x5d4b302506645c37ff133b98c4b50a5ae14841659738d6d733d59d0d217a93bf::coin::COIN>",
                 "pool": "0x190a1351d132b499cd784c2e6b31fe1a096bd0cbbb07beecd73b4bfbc1889d96"
             },
@@ -392,6 +434,18 @@
                 "stakingToken": "Debt BUCK",
                 "address": "0x5ffa69ee4ee14d899dcc750df92de12bad4bacf81efa1ae12ee76406804dda7f::vault::DebtCoin<0xce7ff77a83ea0cb6fd39bd8748e2ec89a3f41e8efdc3f4eb123e0ca37b184db2::buck::BUCK>",
                 "pool": "0x01aef22a91884a08765835c5dde8e3088b1a24ae963ade090755fb225cd365fb"
+            },
+            {
+                "id": 20,
+                "stakingToken": "Magic USDC",
+                "address": "0x5ffa69ee4ee14d899dcc750df92de12bad4bacf81efa1ae12ee76406804dda7f::vault::MagicCoin<0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC>",
+                "pool": "0x09096af1e6bfc8d36a30968d44bf0fd60f20ad8dfcafb70c858af2a9deb34cce"
+            },
+            {
+                "id": 21,
+                "stakingToken": "Debt USDC",
+                "address": "0x5ffa69ee4ee14d899dcc750df92de12bad4bacf81efa1ae12ee76406804dda7f::vault::DebtCoin<0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC>",
+                "pool": "0xa097516e5425deb06b722074e063af1e7348c288a52da4b26ad54f1f9f163046"
             }
         ]
     },
@@ -408,7 +462,7 @@
             },
             {
                 "id": 1,
-                "stakingToken": "Magic USDC",
+                "stakingToken": "Magic wUSDC",
                 "address": "0x5ffa69ee4ee14d899dcc750df92de12bad4bacf81efa1ae12ee76406804dda7f::vault::MagicCoin<0x5d4b302506645c37ff133b98c4b50a5ae14841659738d6d733d59d0d217a93bf::coin::COIN>",
                 "pool": "0x1196b890f964726e46e875a2eae749f0d66dc22995378b7936e5de2aed115652"
             },
@@ -459,6 +513,12 @@
                 "stakingToken": "Magic BUCK",
                 "address": "0x5ffa69ee4ee14d899dcc750df92de12bad4bacf81efa1ae12ee76406804dda7f::vault::MagicCoin<0xce7ff77a83ea0cb6fd39bd8748e2ec89a3f41e8efdc3f4eb123e0ca37b184db2::buck::BUCK>",
                 "pool": "0x9aa2a2dd1511243c00c25702b38b04049a5a701d8decc71be04cc150e43cb283"
+            },
+            {
+                "id": 10,
+                "stakingToken": "Magic USDC",
+                "address": "0x5ffa69ee4ee14d899dcc750df92de12bad4bacf81efa1ae12ee76406804dda7f::vault::MagicCoin<0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC>",
+                "pool": "0x0d28f718921470e88da9339b8c24fdba93757da3f036e8736f7fbe1ca6fe53eb"
             }
         ]
     },
@@ -476,7 +536,7 @@
             "tripleSlopeModel": "0x79d0b16ddeea60be054d1610f8566a2cdd5af103204f70826eb85d57f0b373a4",
             "workers": [
                 {
-                    "name": "SUI-USDC CetusClmmWorker",
+                    "name": "SUI-wUSDC CetusClmmWorker",
                     "address": "0x1454bd0be3db3c4be862104bde964913182de6d380aea24b88320505baba5e46",
                     "upgradeAddr": "0x228c03da5a3e67b14bee12abb5c31b9e8bba1151ee6d1913a026ff2c86239d5d",
                     "workerInfo": "0x3d946af3a3c0bec5f232541accf2108b97326734e626f704dda1dfb7450deb4c",
@@ -600,12 +660,33 @@
                         "StrategyPartialCloseLiquidate": 5,
                         "StrategyPartialCloseMinimizeTrading": 6
                     }
+                },
+                {
+                    "name": "SUI-USDC CetusClmmWorker",
+                    "address": "0x6e30dd0792fc4232e40cbbff861ece3c0a029d431cc3a62c5c46031524c2c91a",
+                    "upgradeAddr": "0x6e30dd0792fc4232e40cbbff861ece3c0a029d431cc3a62c5c46031524c2c91a",
+                    "workerInfo": "0x18d1556fddf2eaacfe922b3ce3a3c339d19363d190b3e0c22b6291ab1cf57d6c",
+                    "config": "0x79d0b16ddeea60be054d1610f8566a2cdd5af103204f70826eb85d57f0b373a4",
+                    "baseToken": "0x0000000000000000000000000000000000000000000000000000000000000002::sui::SUI",
+                    "farmingToken": "0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC",
+                    "pId": 17,
+                    "stakingToken": "0x1d25aa479630953f1313749759a476aa620ce65a3f2eab7a2e52a3a5e1e6e797::cetus_clmm_worker::VirtualClmmLP",
+                    "stakingTokenAt": "",
+                    "isReversePool": true,
+                    "strategies": {
+                        "StrategyAddAllBaseToken": 1,
+                        "StrategyAddTwoSidesOptimal": 2,
+                        "StrategyLiquidate": 3,
+                        "StrategyWithdrawMinimizeTrading": 4,
+                        "StrategyPartialCloseLiquidate": 5,
+                        "StrategyPartialCloseMinimizeTrading": 6
+                    }
                 }
             ]
         },
         {
-            "name": "USDC Vault",
-            "symbol": "mUSDC",
+            "name": "wUSDC Vault",
+            "symbol": "mwUSDC",
             "address": "0x5ffa69ee4ee14d899dcc750df92de12bad4bacf81efa1ae12ee76406804dda7f",
             "upgradeAddr": "0x78bf4657eba8b390474715d51dcee7513593cb9db349071653d1f0a6d2c3b294",
             "vaultInfo": "0xf6a7dd8b6371a25a66935479c34c56ce937c0d7eaf49a39ba0c1381da358aa1b",
@@ -616,7 +697,7 @@
             "tripleSlopeModel": "0x79d0b16ddeea60be054d1610f8566a2cdd5af103204f70826eb85d57f0b373a4",
             "workers": [
                 {
-                    "name": "USDC-SUI CetusClmmWorker",
+                    "name": "wUSDC-SUI CetusClmmWorker",
                     "address": "0x334bed7f6426c1a3710ef7f4d66b1225df74146372b40a64e9d0cbfc76d76e67",
                     "upgradeAddr": "0x71e4b5af2cbdd00787d3ecbd101675dabef43d289bae6a886d10ebadb868a666",
                     "workerInfo": "0x98f354c9e166862f079aaadd5e85940c55c440a8461e8e468513e2a86106042c",
@@ -637,7 +718,7 @@
                     }
                 },
                 {
-                    "name": "USDC-USDT CetusClmmWorker",
+                    "name": "wUSDC-USDT CetusClmmWorker",
                     "address": "0x960ab11d560f05f0ec260c7ac87074b569334713594aa02580642e029fd9dd86",
                     "upgradeAddr": "0x161ad4578facda47ff492898d4eb5db70a7c01f3d89c880b2a8c6c45a97edda6",
                     "workerInfo": "0xc28878cfc99628743b13eebca9bdff703daeccb285f8c6ea48120b06f4079926",
@@ -663,7 +744,7 @@
                     }
                 },
                 {
-                    "name": "USDC-WETH CetusClmmWorker",
+                    "name": "wUSDC-WETH CetusClmmWorker",
                     "address": "0xd49d0a3331bd41005dd1a5e295e07bf4cec1359e201ba71fc5a1e541787328d9",
                     "upgradeAddr": "0xe8108ced3898566fc33dbb4d4ece8d2587ae241421173123a4e4d7f767bf8e33",
                     "workerInfo": "0x1774ca4f9e37f37c6b0df9c7f9526adc67113532eb4eaa07f36942092c8e5f51",
@@ -689,7 +770,7 @@
                     }
                 },
                 {
-                    "name": "USDC-CETUS CetusClmmWorker",
+                    "name": "wUSDC-CETUS CetusClmmWorker",
                     "address": "0xd8528e2825b7354f5e4fd3bf89e3998e59f4cf92160d65bf491885677229def0",
                     "upgradeAddr": "0x3cc12f940ff8b1a4de97cf7af15ad0e7ece56f905a818e9881b038490f2127a4",
                     "workerInfo": "0xd093219b4b2be6c44461f1bb32a70b81c496bc14655e7e81d2687f3d77d085da",
@@ -710,7 +791,7 @@
                     }
                 },
                 {
-                    "name": "USDC-WBTC CetusClmmWorker",
+                    "name": "wUSDC-WBTC CetusClmmWorker",
                     "address": "0xff377a83375d63b9c8429362b5c2791bc69f0da861d3d963970ffeac2654d9d5",
                     "upgradeAddr": "0xff377a83375d63b9c8429362b5c2791bc69f0da861d3d963970ffeac2654d9d5",
                     "workerInfo": "0xb0259f15a3c6e40883e85c559b09172c546dc439717347b936d9e1f1559ad53a",
@@ -736,7 +817,7 @@
                     }
                 },
                 {
-                    "name": "USDC-BUCK CetusClmmWorker",
+                    "name": "wUSDC-BUCK CetusClmmWorker",
                     "address": "0xe6ba97715edd0cfe6a8e40654b37c6f46a8a8af5b7fe2eefa3fd713243857993",
                     "upgradeAddr": "0xe6ba97715edd0cfe6a8e40654b37c6f46a8a8af5b7fe2eefa3fd713243857993",
                     "workerInfo": "0xf7fc938356331d7404226c147328750cf2d8ef8a273ed8bc1450ee4e0ff0e659",
@@ -776,7 +857,7 @@
             "tripleSlopeModel": "0x79d0b16ddeea60be054d1610f8566a2cdd5af103204f70826eb85d57f0b373a4",
             "workers": [
                 {
-                    "name": "USDT-USDC CetusClmmWorker",
+                    "name": "USDT-wUSDC CetusClmmWorker",
                     "address": "0x9cb48aa1b41a1183ecdabde578e640e05a08170f8ca165b743ffded0b1256391",
                     "upgradeAddr": "0x45322cd6e6e9a77dbbe306f94bf753e3b286df5fba6aa6450387d06d8e7d00b2",
                     "workerInfo": "0x3f99d841487141e46602424b1b4125751a2df29a23b65f6c56786f3679f2c2c1",
@@ -821,6 +902,32 @@
                         "StrategyPartialCloseLiquidate": 5,
                         "StrategyPartialCloseMinimizeTrading": 6
                     }
+                },
+                {
+                    "name": "USDT-USDC CetusClmmWorker",
+                    "address": "0x76e6fd74c625e04879d0aefdd8bbae10a836504ef0d41e6124b0e965dcec8683",
+                    "upgradeAddr": "0x76e6fd74c625e04879d0aefdd8bbae10a836504ef0d41e6124b0e965dcec8683",
+                    "workerInfo": "0x354808fb8a29a59e35e2d9bf06892eb913d750796b71b5f72efa6cd9d5dbbc27",
+                    "config": "0x79d0b16ddeea60be054d1610f8566a2cdd5af103204f70826eb85d57f0b373a4",
+                    "baseToken": "0xc060006111016b8a020ad5b33834984a437aaa7d3c74c18e09a95d48aceab08c::coin::COIN",
+                    "farmingToken": "0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC",
+                    "pId": 18,
+                    "stakingToken": "0xf74d70ad742dcbb0f75dc75312b3e7f2a5dd0b9f01634565289cbb6a6eb812c0::cetus_clmm_worker::VirtualClmmLP",
+                    "stakingTokenAt": "",
+                    "isReversePool": true,
+                    "isUseNewOthersMethod": true,
+                    "aIsSwaptoBaseOrFarming": false,
+                    "bIsSwaptoBaseOrFarming": false,
+                    "rewardOtherA": "SUI",
+                    "rewardOtherB": "CETUS",
+                    "strategies": {
+                        "StrategyAddAllBaseToken": 1,
+                        "StrategyAddTwoSidesOptimal": 2,
+                        "StrategyLiquidate": 3,
+                        "StrategyWithdrawMinimizeTrading": 4,
+                        "StrategyPartialCloseLiquidate": 5,
+                        "StrategyPartialCloseMinimizeTrading": 6
+                    }
                 }
             ]
         },
@@ -837,7 +944,7 @@
             "tripleSlopeModel": "0x79d0b16ddeea60be054d1610f8566a2cdd5af103204f70826eb85d57f0b373a4",
             "workers": [
                 {
-                    "name": "WETH-USDC CetusClmmWorker",
+                    "name": "WETH-wUSDC CetusClmmWorker",
                     "address": "0xb7a0d251a9f307b80b1595c87622118e401dc613591b3435786bb7c147599dae",
                     "upgradeAddr": "0x3b207c60b383f569c36d32ddc7c14402fb0631390332df3fa287f2bb80a2dcc7",
                     "workerInfo": "0xbeb69ca36f0ab6cb87247a366f50aab851180332216730e63e983ca0e617f326",
@@ -898,7 +1005,7 @@
                     }
                 },
                 {
-                    "name": "CETUS-USDC CetusClmmWorker",
+                    "name": "CETUS-wUSDC CetusClmmWorker",
                     "address": "0xf538241fc4783dbf0eca4cf516fbc7ad5b910517e25d8e4ec7fb754eb9b0280c",
                     "upgradeAddr": "0xfadd17936e685c5dbe3533cb1f2218ec3604f3a017b914bab2acc0d632419577",
                     "workerInfo": "0x88af306756ce514c6a70b378336489f8773ed48f8880d3171a60c2ecb8e7a5ec",
@@ -928,6 +1035,27 @@
                     "farmingToken": "0xa99b8952d4f7d947ea77fe0ecdcc9e5fc0bcab2841d6e2a5aa00c3044e5544b5::navx::NAVX",
                     "pId": 10,
                     "stakingToken": "0x6665ad06bb0c47a00e3ce6da9c796f8061b9f8178095e421ce36e3f73345f24a::cetus_clmm_worker::VirtualClmmLP",
+                    "stakingTokenAt": "",
+                    "isReversePool": true,
+                    "strategies": {
+                        "StrategyAddAllBaseToken": 1,
+                        "StrategyAddTwoSidesOptimal": 2,
+                        "StrategyLiquidate": 3,
+                        "StrategyWithdrawMinimizeTrading": 4,
+                        "StrategyPartialCloseLiquidate": 5,
+                        "StrategyPartialCloseMinimizeTrading": 6
+                    }
+                },
+                {
+                    "name": "CETUS-USDC CetusClmmWorker",
+                    "address": "0xe77bf63a6b95ce64a04c156a27c69e3ae4f823773fa9dc441c854d106ae21fda",
+                    "upgradeAddr": "0xe77bf63a6b95ce64a04c156a27c69e3ae4f823773fa9dc441c854d106ae21fda",
+                    "workerInfo": "0x7b62b4ea193bb6abf99380b3ad341db84ee28c289bf624c16fb6e7eed21ae988",
+                    "config": "0x79d0b16ddeea60be054d1610f8566a2cdd5af103204f70826eb85d57f0b373a4",
+                    "baseToken": "0x06864a6f921804860930db6ddbe2e16acdf8504495ea7481637a1c8b9a8fe54b::cetus::CETUS",
+                    "farmingToken": "0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC",
+                    "pId": 19,
+                    "stakingToken": "0xbeae77b098564b7e62be51527b71300759014085c8ce849f2726397a5fcc411d::cetus_clmm_worker::VirtualClmmLP",
                     "stakingTokenAt": "",
                     "isReversePool": true,
                     "strategies": {
@@ -1080,7 +1208,7 @@
             "tripleSlopeModel": "0x79d0b16ddeea60be054d1610f8566a2cdd5af103204f70826eb85d57f0b373a4",
             "workers": [
                 {
-                    "name": "WBTC-USDC CetusClmmWorker",
+                    "name": "WBTC-wUSDC CetusClmmWorker",
                     "address": "0x15fbfe8c27c920baaa1e4bd8bfe05c4408311612baf6493ed3285c6bd95a6939",
                     "upgradeAddr": "0x15fbfe8c27c920baaa1e4bd8bfe05c4408311612baf6493ed3285c6bd95a6939",
                     "workerInfo": "0x99d6a5dad2b4b840d28ea88cc8fb599f4eb54a897bd3573957c8fbefa8e252ac",
@@ -1120,7 +1248,7 @@
             "tripleSlopeModel": "0x79d0b16ddeea60be054d1610f8566a2cdd5af103204f70826eb85d57f0b373a4",
             "workers": [
                 {
-                    "name": "BUCK-USDC CetusClmmWorker",
+                    "name": "BUCK-wUSDC CetusClmmWorker",
                     "address": "0xcac7d10d73c3c32f6d40031c8639dfde168e6e1c0e4a86f8d23f21db60f97c94",
                     "upgradeAddr": "0xcac7d10d73c3c32f6d40031c8639dfde168e6e1c0e4a86f8d23f21db60f97c94",
                     "workerInfo": "0x1a8ad1068ab9bc5b94f2e3baa7a5eaac67e1337e2a47463fcfbc1b9ed26ef5ce",
@@ -1136,6 +1264,88 @@
                     "bIsSwaptoBaseOrFarming": false,
                     "rewardOtherA": "CETUS",
                     "rewardOtherB": "",
+                    "strategies": {
+                        "StrategyAddAllBaseToken": 1,
+                        "StrategyAddTwoSidesOptimal": 2,
+                        "StrategyLiquidate": 3,
+                        "StrategyWithdrawMinimizeTrading": 4,
+                        "StrategyPartialCloseLiquidate": 5,
+                        "StrategyPartialCloseMinimizeTrading": 6
+                    }
+                }
+            ]
+        },
+        {
+            "name": "USDC Vault",
+            "symbol": "mUSDC",
+            "address": "0x5ffa69ee4ee14d899dcc750df92de12bad4bacf81efa1ae12ee76406804dda7f",
+            "upgradeAddr": "0x78bf4657eba8b390474715d51dcee7513593cb9db349071653d1f0a6d2c3b294",
+            "vaultInfo": "0x3a05b55b080cc696aa43e020d3ea68ebfc5386666a5d1f8f5c0d4f6d1393224e",
+            "baseToken": "0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC",
+            "magicToken": "0x5ffa69ee4ee14d899dcc750df92de12bad4bacf81efa1ae12ee76406804dda7f::vault::MagicCoin<0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC>",
+            "debtToken": "0x5ffa69ee4ee14d899dcc750df92de12bad4bacf81efa1ae12ee76406804dda7f::vault::DebtCoin<0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC>",
+            "config": "0xbcdd5cd88604d4a14f937a88e0560d906592dbbf153de9ee3417609daff864c6",
+            "tripleSlopeModel": "0x79d0b16ddeea60be054d1610f8566a2cdd5af103204f70826eb85d57f0b373a4",
+            "workers": [
+                {
+                    "name": "USDC-SUI CetusClmmWorker",
+                    "address": "0x1d25aa479630953f1313749759a476aa620ce65a3f2eab7a2e52a3a5e1e6e797",
+                    "upgradeAddr": "0x1d25aa479630953f1313749759a476aa620ce65a3f2eab7a2e52a3a5e1e6e797",
+                    "workerInfo": "0x44bff32bda79532beafeb35ce80f5673b03bc3411229b6bb55d368827271ea9f",
+                    "config": "0x79d0b16ddeea60be054d1610f8566a2cdd5af103204f70826eb85d57f0b373a4",
+                    "baseToken": "0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC",
+                    "farmingToken": "0x0000000000000000000000000000000000000000000000000000000000000002::sui::SUI",
+                    "pId": 17,
+                    "stakingToken": "0x1d25aa479630953f1313749759a476aa620ce65a3f2eab7a2e52a3a5e1e6e797::cetus_clmm_worker::VirtualClmmLP",
+                    "stakingTokenAt": "",
+                    "isReversePool": false,
+                    "strategies": {
+                        "StrategyAddAllBaseToken": 1,
+                        "StrategyAddTwoSidesOptimal": 2,
+                        "StrategyLiquidate": 3,
+                        "StrategyWithdrawMinimizeTrading": 4,
+                        "StrategyPartialCloseLiquidate": 5,
+                        "StrategyPartialCloseMinimizeTrading": 6
+                    }
+                },
+                {
+                    "name": "USDC-USDT CetusClmmWorker",
+                    "address": "0xf74d70ad742dcbb0f75dc75312b3e7f2a5dd0b9f01634565289cbb6a6eb812c0",
+                    "upgradeAddr": "0xf74d70ad742dcbb0f75dc75312b3e7f2a5dd0b9f01634565289cbb6a6eb812c0",
+                    "workerInfo": "0xc3f471085526079f294d8395cc078393a7e7f8f750d6d7871679c58bfab38ac8",
+                    "config": "0x79d0b16ddeea60be054d1610f8566a2cdd5af103204f70826eb85d57f0b373a4",
+                    "baseToken": "0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC",
+                    "farmingToken": "0xc060006111016b8a020ad5b33834984a437aaa7d3c74c18e09a95d48aceab08c::coin::COIN",
+                    "pId": 18,
+                    "stakingToken": "0xf74d70ad742dcbb0f75dc75312b3e7f2a5dd0b9f01634565289cbb6a6eb812c0::cetus_clmm_worker::VirtualClmmLP",
+                    "stakingTokenAt": "",
+                    "isReversePool": false,
+                    "isUseNewOthersMethod": true,
+                    "aIsSwaptoBaseOrFarming": true,
+                    "bIsSwaptoBaseOrFarming": true,
+                    "rewardOtherA": "SUI",
+                    "rewardOtherB": "CETUS",
+                    "strategies": {
+                        "StrategyAddAllBaseToken": 1,
+                        "StrategyAddTwoSidesOptimal": 2,
+                        "StrategyLiquidate": 3,
+                        "StrategyWithdrawMinimizeTrading": 4,
+                        "StrategyPartialCloseLiquidate": 5,
+                        "StrategyPartialCloseMinimizeTrading": 6
+                    }
+                },
+                {
+                    "name": "USDC-CETUS CetusClmmWorker",
+                    "address": "0xbeae77b098564b7e62be51527b71300759014085c8ce849f2726397a5fcc411d",
+                    "upgradeAddr": "0xbeae77b098564b7e62be51527b71300759014085c8ce849f2726397a5fcc411d",
+                    "workerInfo": "0x5dfdcaaa330e31605b8444f0d65d3e46fd2d0f4addf44d2284d05b1225ab2dca",
+                    "config": "0x79d0b16ddeea60be054d1610f8566a2cdd5af103204f70826eb85d57f0b373a4",
+                    "baseToken": "0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC",
+                    "farmingToken": "0x06864a6f921804860930db6ddbe2e16acdf8504495ea7481637a1c8b9a8fe54b::cetus::CETUS",
+                    "pId": 19,
+                    "stakingToken": "0xbeae77b098564b7e62be51527b71300759014085c8ce849f2726397a5fcc411d::cetus_clmm_worker::VirtualClmmLP",
+                    "stakingTokenAt": "",
+                    "isReversePool": false,
                     "strategies": {
                         "StrategyAddAllBaseToken": 1,
                         "StrategyAddTwoSidesOptimal": 2,

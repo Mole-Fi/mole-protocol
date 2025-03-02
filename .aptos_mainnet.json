@@ -1,0 +1,129 @@
+{
+  "Publisher": "0x3d16a41b9b635c2af58f2a3b7889fa897de702dac71ca27cd0f0bf565b45703d",
+  "Vaults": [
+    {
+      "workers": [
+        {
+          "address": "0x88367f51955f2aa52a7fd5d6ef99dacbfa8565d5de2680e15d5062881f8cb1af"
+        },
+        {
+          "address": "0xd3cfe9539e1b37eb4ddd2a762c7ec44e823fd64948db1adeee9a18b5c6aa9b4e"
+        },
+        {
+          "address": "0x2d4feb97db4b92eb454b8a3fdb7eb62c46604d2c6377423b68f2299b234b2758"
+        },
+        {
+          "address": "0xadec8e0b543e88006ce7ef15a8057a303eaaf50ac672e633ea69ce13cbf51f92"
+        },
+        {
+          "address": "0x05d7ad99e5d7ee927dd8a76c8bbf52a53e7fade5058461715ca8508d0a3a390b"
+        }
+      ]
+    },
+    {
+      "workers": [
+        {
+          "address": "0x3b06c994e0addfd9a33eea964457acccc489895bf45fef8bbe2de1710deed862"
+        },
+        {
+          "address": "0x46096c735acfe5d021c59a8c240a9cf397fd9c4966f7712a657fef48f748db08"
+        },
+        {
+          "address": "0x889e061b57c5520ca639ab14b2c7c4731c310ab996a52e3020a5f1df77ed080e"
+        },
+        {
+          "address": "0xd9d7315910776aa1365f937f5b9e54326aaf1d412db9c922967b16b0ece3a528"
+        },
+        {
+          "address": "0xb8c281405145bb07ff2bc6493c38d963eb46e569a1bdd051777706e58f9b294b"
+        },
+        {
+          "address": "0xce0fcbc42094bb717d5b633399a0b3b069fbeb0dd9701df0769cc27c1fe511d0"
+        }
+      ]
+    },
+    {
+      "workers": [
+        {
+          "address": "0x13b637f8c0a4554ad88548b938812cf553b314ec9fc896b747a11f7643351bfc"
+        },
+        {
+          "address": "0x432798f38ab527461023997a621d8c3ba519c4b4fba878b0e1bb4b89103e4b38"
+        },
+        {
+          "address": "0x5799f0f99287d3bb0c965f87efcc70a84eebcbe80ced480ecf97e2645ec6cb36"
+        }
+      ]
+    },
+    {
+      "workers": [
+        {
+          "address": "0x7e3c0c184584b5045f60b16e531ee81f09930660cbe75bac25214c269b1ac24e"
+        },
+        {
+          "address": "0xffd90a77fd5406594d1b038c2b0c69311d0cb0df9a5e6a35ba2aba7e5163cb06"
+        }
+      ]
+    },
+    {
+      "workers": [
+        {
+          "address": "0x1c515f059b08635121f1985422d7043db27f8dbce792547bb8c6b7cd204fe9b2"
+        },
+        {
+          "address": "0x243f0fcd7d7dde0e36253ca86735af5131a01c2b351d056e9d73d165a3e0a561"
+        },
+        {
+          "address": "0x8f2263da92b3b0b53ee74bdc752ecd9e1f1460f86d1a95bfca9a1dc58ce2e911"
+        },
+        {
+          "address": "0xee2b4308029d3fabd7ad03f8984147979e699fb7794530600484ca41fc862d77"
+        }
+      ]
+    },
+    {
+      "workers": [
+        {
+          "address": "0x611b3cefdd7b89e4e6231ec985d25679b24dece05934883848062c68f333aef7"
+        },
+        {
+          "address": "0x9a669542a9773d575a909f806ee413db25f7d1e914310a4afe2cce7281c1827f"
+        }
+      ]
+    },
+    {
+      "workers": [
+        {
+          "address": "0x568476fb9996c08d1b7b4c8609a8bbcd86110d5241d3469666e10a90e66c8e08"
+        }
+      ]
+    },
+    {
+      "workers": [
+        {
+          "address": "0x410e6b6f9ea929539527106e15efd11badb086b7a59cd3b0503cc69fd1a040bf"
+        },
+        {
+          "address": "0x5d9e46baf6fc4e2b0ad0a5049704c98a940d106af368d1202b07d288922fdd0d"
+        },
+        {
+          "address": "0xe6900bee749d01127bb88da24cbf5a85cd3c7dd48f1a2509456628d8d50488ac"
+        }
+      ]
+    },
+    {
+      "workers": [
+        {
+          "address": "0x2219e0674e95ec1b59e731ef21ba10b2c6406f7c672fb806fdb82ccdced35084"
+        }
+      ]
+    },
+    {
+      "workers": [
+        {
+          "address": "0x79f12fe3a8c4a0b0ff69719d88359740e500e582bf62b9f30c158a60c1e484ee"
+        }
+      ]
+    }
+  ]
+}

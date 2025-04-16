@@ -164,6 +164,9 @@
                 },
                 {
                     "workerInfo": "0x8c0684fa6a81c15f2956e5d01b66a8794182935c400fad9b78414db2e0127b98"
+                },
+                {
+                    "workerInfo": "0xf823b1460defefa6f3923e4f4eb93795f421756de29afed344ddd6d6dd91be29"
                 }
             ]
         },
@@ -182,6 +185,15 @@
             "workers": [
                 {
                     "workerInfo": "0xa04a6445403ad44a23d9828db39057d08580689db40dc413919c5e13af94f395"
+                }
+            ]
+        },
+        {
+            "vaultInfo": "0x7fc36273dcaa5e746d362f055d73bdf3d60fa3c3a827fe215cbd09af550afb27",
+            "baseToken": "0x960b531667636f39e85867775f52f6b1f220a058c4de786905bdf761e06a56bb::usdy::USDY",
+            "workers": [
+                {
+                    "workerInfo": "0x3ef9304468faecfaf7d2317960b9e69fb85ea2610cc089244f3c0d54abf167e7"
                 }
             ]
         }

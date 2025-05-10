@@ -6,22 +6,28 @@
             "baseToken": "0x0000000000000000000000000000000000000000000000000000000000000002::sui::SUI",
             "workers": [
                 {
-                    "workerInfo": "0x3d946af3a3c0bec5f232541accf2108b97326734e626f704dda1dfb7450deb4c"
+                    "workerInfo": "0x3d946af3a3c0bec5f232541accf2108b97326734e626f704dda1dfb7450deb4c",
+                    "isSF": false
                 },
                 {
-                    "workerInfo": "0xc792fa9679b2f73d8debad2963b4cdf629cf78edcab78e2b8c3661b91d7f6a45"
+                    "workerInfo": "0xc792fa9679b2f73d8debad2963b4cdf629cf78edcab78e2b8c3661b91d7f6a45",
+                    "isSF": false
                 },
                 {
-                    "workerInfo": "0x7a41fbf19809f80fd1a7282b218ec8326dfaadc2ad20604d052c12d5076596b4"
+                    "workerInfo": "0x7a41fbf19809f80fd1a7282b218ec8326dfaadc2ad20604d052c12d5076596b4",
+                    "isSF": false
                 },
                 {
-                    "workerInfo": "0x18d1556fddf2eaacfe922b3ce3a3c339d19363d190b3e0c22b6291ab1cf57d6c"
+                    "workerInfo": "0x18d1556fddf2eaacfe922b3ce3a3c339d19363d190b3e0c22b6291ab1cf57d6c",
+                    "isSF": false
                 },
                 {
-                    "workerInfo": "0x89a808d0ba894599b89e7d8010682ce937af991fafebecb11667bb11d407d8c3"
+                    "workerInfo": "0x89a808d0ba894599b89e7d8010682ce937af991fafebecb11667bb11d407d8c3",
+                    "isSF": false
                 },
                 {
-                    "workerInfo": "0x9af96eeb7ca6c1d17cad76607cd04b4ee712908345b64d66e9d3df9f053c5b82"
+                    "workerInfo": "0x9af96eeb7ca6c1d17cad76607cd04b4ee712908345b64d66e9d3df9f053c5b82",
+                    "isSF": true
                 }
             ]
         },
@@ -30,22 +36,28 @@
             "baseToken": "0x5d4b302506645c37ff133b98c4b50a5ae14841659738d6d733d59d0d217a93bf::coin::COIN",
             "workers": [
                 {
-                    "workerInfo": "0x98f354c9e166862f079aaadd5e85940c55c440a8461e8e468513e2a86106042c"
+                    "workerInfo": "0x98f354c9e166862f079aaadd5e85940c55c440a8461e8e468513e2a86106042c",
+                    "isSF": false
                 },
                 {
-                    "workerInfo": "0xc28878cfc99628743b13eebca9bdff703daeccb285f8c6ea48120b06f4079926"
+                    "workerInfo": "0xc28878cfc99628743b13eebca9bdff703daeccb285f8c6ea48120b06f4079926",
+                    "isSF": false
                 },
                 {
-                    "workerInfo": "0x1774ca4f9e37f37c6b0df9c7f9526adc67113532eb4eaa07f36942092c8e5f51"
+                    "workerInfo": "0x1774ca4f9e37f37c6b0df9c7f9526adc67113532eb4eaa07f36942092c8e5f51",
+                    "isSF": false
                 },
                 {
-                    "workerInfo": "0xb0259f15a3c6e40883e85c559b09172c546dc439717347b936d9e1f1559ad53a"
+                    "workerInfo": "0xb0259f15a3c6e40883e85c559b09172c546dc439717347b936d9e1f1559ad53a",
+                    "isSF": false
                 },
                 {
-                    "workerInfo": "0x9b0e6176f25aeff94388fcf2c7d98ca481997f9e08160875263c4c50b669d242"
+                    "workerInfo": "0x9b0e6176f25aeff94388fcf2c7d98ca481997f9e08160875263c4c50b669d242",
+                    "isSF": false
                 },
                 {
-                    "workerInfo": "0x6759e2cb781a5a4f47b8b55684b1ab87ba46a7ff770a3e2f2c42cf94fb306d76"
+                    "workerInfo": "0x6759e2cb781a5a4f47b8b55684b1ab87ba46a7ff770a3e2f2c42cf94fb306d76",
+                    "isSF": false
                 }
             ]
         },
@@ -54,10 +66,12 @@
             "baseToken": "0xc060006111016b8a020ad5b33834984a437aaa7d3c74c18e09a95d48aceab08c::coin::COIN",
             "workers": [
                 {
-                    "workerInfo": "0x3f99d841487141e46602424b1b4125751a2df29a23b65f6c56786f3679f2c2c1"
+                    "workerInfo": "0x3f99d841487141e46602424b1b4125751a2df29a23b65f6c56786f3679f2c2c1",
+                    "isSF": false
                 },
                 {
-                    "workerInfo": "0x354808fb8a29a59e35e2d9bf06892eb913d750796b71b5f72efa6cd9d5dbbc27"
+                    "workerInfo": "0x354808fb8a29a59e35e2d9bf06892eb913d750796b71b5f72efa6cd9d5dbbc27",
+                    "isSF": false
                 }
             ]
         },
@@ -66,7 +80,8 @@
             "baseToken": "0xaf8cd5edc19c4512f4259f0bee101a40d41ebed738ade5874359610ef8eeced5::coin::COIN",
             "workers": [
                 {
-                    "workerInfo": "0xbeb69ca36f0ab6cb87247a366f50aab851180332216730e63e983ca0e617f326"
+                    "workerInfo": "0xbeb69ca36f0ab6cb87247a366f50aab851180332216730e63e983ca0e617f326",
+                    "isSF": false
                 }
             ]
         },
@@ -75,7 +90,8 @@
             "baseToken": "0x06864a6f921804860930db6ddbe2e16acdf8504495ea7481637a1c8b9a8fe54b::cetus::CETUS",
             "workers": [
                 {
-                    "workerInfo": "0x7b62b4ea193bb6abf99380b3ad341db84ee28c289bf624c16fb6e7eed21ae988"
+                    "workerInfo": "0x7b62b4ea193bb6abf99380b3ad341db84ee28c289bf624c16fb6e7eed21ae988",
+                    "isSF": false
                 }
             ]
         },
@@ -84,10 +100,12 @@
             "baseToken": "0xbde4ba4c2e274a60ce15c1cfff9e5c42e41654ac8b6d906a57efa4bd3c29f47d::hasui::HASUI",
             "workers": [
                 {
-                    "workerInfo": "0xed1bc37595a30e98c984a1e2c4860babf3420bffd9f4333ffc6fa22f2f9099b8"
+                    "workerInfo": "0xed1bc37595a30e98c984a1e2c4860babf3420bffd9f4333ffc6fa22f2f9099b8",
+                    "isSF": false
                 },
                 {
-                    "workerInfo": "0x4e0f84b2d00700102553482e46ec08bd65b29e0d4fc9af8b39b0b25e299fcf1f"
+                    "workerInfo": "0x4e0f84b2d00700102553482e46ec08bd65b29e0d4fc9af8b39b0b25e299fcf1f",
+                    "isSF": true
                 }
             ]
         },
@@ -103,7 +121,8 @@
             "baseToken": "0x7016aae72cfc67f2fadf55769c0a7dd54291a583b63051a5ed71081cce836ac6::sca::SCA",
             "workers": [
                 {
-                    "workerInfo": "0x9f3086aaa1f3790b06bb01c0077d0a709cdb234fbae13c70fa5fdeafacb119aa"
+                    "workerInfo": "0x9f3086aaa1f3790b06bb01c0077d0a709cdb234fbae13c70fa5fdeafacb119aa",
+                    "isSF": false
                 }
             ]
         },
@@ -112,7 +131,8 @@
             "baseToken": "0x027792d9fed7f9844eb4839566001bb6f6cb4804f66aa2da6fe1ee242d896881::coin::COIN",
             "workers": [
                 {
-                    "workerInfo": "0x99d6a5dad2b4b840d28ea88cc8fb599f4eb54a897bd3573957c8fbefa8e252ac"
+                    "workerInfo": "0x99d6a5dad2b4b840d28ea88cc8fb599f4eb54a897bd3573957c8fbefa8e252ac",
+                    "isSF": false
                 }
             ]
         },
@@ -121,10 +141,12 @@
             "baseToken": "0xce7ff77a83ea0cb6fd39bd8748e2ec89a3f41e8efdc3f4eb123e0ca37b184db2::buck::BUCK",
             "workers": [
                 {
-                    "workerInfo": "0x05d0e4b408c1a66bc7ed21a591970962f7e60ebc569a35ff1c61cbb2cdbf3832"
+                    "workerInfo": "0x05d0e4b408c1a66bc7ed21a591970962f7e60ebc569a35ff1c61cbb2cdbf3832",
+                    "isSF": false
                 },
                 {
-                    "workerInfo": "0xae7c55844e42ef1296af174ae10c247d091fd6be87a718a34af2f9dffaf05fc8"
+                    "workerInfo": "0xae7c55844e42ef1296af174ae10c247d091fd6be87a718a34af2f9dffaf05fc8",
+                    "isSF": false
                 }
             ]
         },
@@ -133,46 +155,60 @@
             "baseToken": "0xdba34672e30cb065b1f93e3ab55318768fd6fef66c15942c9f7cb846e2f900e7::usdc::USDC",
             "workers": [
                 {
-                    "workerInfo": "0x44bff32bda79532beafeb35ce80f5673b03bc3411229b6bb55d368827271ea9f"
+                    "workerInfo": "0x44bff32bda79532beafeb35ce80f5673b03bc3411229b6bb55d368827271ea9f",
+                    "isSF": false
                 },
                 {
-                    "workerInfo": "0xc3f471085526079f294d8395cc078393a7e7f8f750d6d7871679c58bfab38ac8"
+                    "workerInfo": "0xc3f471085526079f294d8395cc078393a7e7f8f750d6d7871679c58bfab38ac8",
+                    "isSF": false
                 },
                 {
-                    "workerInfo": "0x5dfdcaaa330e31605b8444f0d65d3e46fd2d0f4addf44d2284d05b1225ab2dca"
+                    "workerInfo": "0x5dfdcaaa330e31605b8444f0d65d3e46fd2d0f4addf44d2284d05b1225ab2dca",
+                    "isSF": false
                 },
                 {
-                    "workerInfo": "0x6b65414a6244fdbd71d0e1fc8e0a27c717f68db51faf5a7cce7256abae9a320e"
+                    "workerInfo": "0x6b65414a6244fdbd71d0e1fc8e0a27c717f68db51faf5a7cce7256abae9a320e",
+                    "isSF": false
                 },
                 {
-                    "workerInfo": "0x1c0a2e9e57e51b8f3557c3a6a1163b4909d9a14516ad7ecf7dd7814e7328d6fc"
+                    "workerInfo": "0x1c0a2e9e57e51b8f3557c3a6a1163b4909d9a14516ad7ecf7dd7814e7328d6fc",
+                    "isSF": false
                 },
                 {
-                    "workerInfo": "0x27e235491f516aaa2b6d7a4b1fd402a518f3da93d1e208ec9e7c072b4cf32e0a"
+                    "workerInfo": "0x27e235491f516aaa2b6d7a4b1fd402a518f3da93d1e208ec9e7c072b4cf32e0a",
+                    "isSF": false
                 },
                 {
-                    "workerInfo": "0x090d1bbf706bfdb00dfa7f2faeba793ccff87c2845f23312ed94c3f6a5aa02fd"
+                    "workerInfo": "0x090d1bbf706bfdb00dfa7f2faeba793ccff87c2845f23312ed94c3f6a5aa02fd",
+                    "isSF": false
                 },
                 {
-                    "workerInfo": "0x85b95d5c30f481e45e51493771140d11ccdd28ca8fdf2a9abb0431d31b7298d0"
+                    "workerInfo": "0x85b95d5c30f481e45e51493771140d11ccdd28ca8fdf2a9abb0431d31b7298d0",
+                    "isSF": false
                 },
                 {
-                    "workerInfo": "0xf658a0a9eb06b349a5493100094066c0b3548c18545ae5b7607748d1dcb997ca"
+                    "workerInfo": "0xf658a0a9eb06b349a5493100094066c0b3548c18545ae5b7607748d1dcb997ca",
+                    "isSF": false
                 },
                 {
-                    "workerInfo": "0x2ce694787928598ad30daf85d68b26d1fb4e271385201576f76a81381281e843"
+                    "workerInfo": "0x2ce694787928598ad30daf85d68b26d1fb4e271385201576f76a81381281e843",
+                    "isSF": false
                 },
                 {
-                    "workerInfo": "0x0547da166a7dbc7fa9f6c67c48e20651fbbe748f4eb4be984f4062889e3a837c"
+                    "workerInfo": "0x0547da166a7dbc7fa9f6c67c48e20651fbbe748f4eb4be984f4062889e3a837c",
+                    "isSF": false
                 },
                 {
-                    "workerInfo": "0x0c4e2689734925f4d760d4feb91e32542d67a56a27f62896ce2f682bb72bea90"
+                    "workerInfo": "0x0c4e2689734925f4d760d4feb91e32542d67a56a27f62896ce2f682bb72bea90",
+                    "isSF": false
                 },
                 {
-                    "workerInfo": "0x8c0684fa6a81c15f2956e5d01b66a8794182935c400fad9b78414db2e0127b98"
+                    "workerInfo": "0x8c0684fa6a81c15f2956e5d01b66a8794182935c400fad9b78414db2e0127b98",
+                    "isSF": false
                 },
                 {
-                    "workerInfo": "0xf823b1460defefa6f3923e4f4eb93795f421756de29afed344ddd6d6dd91be29"
+                    "workerInfo": "0xf823b1460defefa6f3923e4f4eb93795f421756de29afed344ddd6d6dd91be29",
+                    "isSF": false
                 }
             ]
         },
@@ -181,7 +217,8 @@
             "baseToken": "0x375f70cf2ae4c00bf37117d0c85a2c71545e6ee05c4a5c7d282cd66a4504b068::usdt::USDT",
             "workers": [
                 {
-                    "workerInfo": "0xe9c2b3d537084d20c1cb6c61f567f4b7f38aa890db8b76a92e5ebab3625fb3d3"
+                    "workerInfo": "0xe9c2b3d537084d20c1cb6c61f567f4b7f38aa890db8b76a92e5ebab3625fb3d3",
+                    "isSF": false
                 }
             ]
         },
@@ -190,7 +227,8 @@
             "baseToken": "0xf16e6b723f242ec745dfd7634ad072c42d5c1d9ac9d62a39c381303eaa57693a::fdusd::FDUSD",
             "workers": [
                 {
-                    "workerInfo": "0xa04a6445403ad44a23d9828db39057d08580689db40dc413919c5e13af94f395"
+                    "workerInfo": "0xa04a6445403ad44a23d9828db39057d08580689db40dc413919c5e13af94f395",
+                    "isSF": false
                 }
             ]
         },
@@ -199,7 +237,8 @@
             "baseToken": "0x960b531667636f39e85867775f52f6b1f220a058c4de786905bdf761e06a56bb::usdy::USDY",
             "workers": [
                 {
-                    "workerInfo": "0x3ef9304468faecfaf7d2317960b9e69fb85ea2610cc089244f3c0d54abf167e7"
+                    "workerInfo": "0x3ef9304468faecfaf7d2317960b9e69fb85ea2610cc089244f3c0d54abf167e7",
+                    "isSF": false
                 }
             ]
         }

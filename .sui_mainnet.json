@@ -19,9 +19,6 @@
                 },
                 {
                     "workerInfo": "0x89a808d0ba894599b89e7d8010682ce937af991fafebecb11667bb11d407d8c3"
-                },
-				{
-                    "workerInfo": "0x9af96eeb7ca6c1d17cad76607cd04b4ee712908345b64d66e9d3df9f053c5b82"
                 }
             ]
         },
@@ -85,9 +82,6 @@
             "workers": [
                 {
                     "workerInfo": "0xed1bc37595a30e98c984a1e2c4860babf3420bffd9f4333ffc6fa22f2f9099b8"
-                },
-				{
-                    "workerInfo": "0x4e0f84b2d00700102553482e46ec08bd65b29e0d4fc9af8b39b0b25e299fcf1f"
                 }
             ]
         },

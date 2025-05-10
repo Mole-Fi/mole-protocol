@@ -22,7 +22,7 @@
                 },
                 {
                     "workerInfo": "0x9af96eeb7ca6c1d17cad76607cd04b4ee712908345b64d66e9d3df9f053c5b82",
-                    "isSF": 'true',
+                    "isSF": true,
                 }
             ]
         },
@@ -89,7 +89,7 @@
                 },
                 {
                     "workerInfo": "0x4e0f84b2d00700102553482e46ec08bd65b29e0d4fc9af8b39b0b25e299fcf1f",
-                    "isSF": 'true',
+                    "isSF": true,
                 }
             ]
         },

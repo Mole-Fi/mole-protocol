@@ -209,6 +209,10 @@
                 {
                     "workerInfo": "0xf823b1460defefa6f3923e4f4eb93795f421756de29afed344ddd6d6dd91be29",
                     "isSF": false
+                },
+                {
+                    "workerInfo": "0xc602fd3f71b40e8ba3c7e01f8e42987cfb660e282fc645952d03ae59a075aea2",
+                    "isSF": false
                 }
             ]
         },
@@ -218,6 +222,10 @@
             "workers": [
                 {
                     "workerInfo": "0xe9c2b3d537084d20c1cb6c61f567f4b7f38aa890db8b76a92e5ebab3625fb3d3",
+                    "isSF": false
+                },
+                {
+                    "workerInfo": "0x01faaad863c448800d2b7223609436c2cdf001c4c397d66eb59bb89a82828b6d",
                     "isSF": false
                 }
             ]

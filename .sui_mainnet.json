@@ -213,6 +213,10 @@
                 {
                     "workerInfo": "0xc602fd3f71b40e8ba3c7e01f8e42987cfb660e282fc645952d03ae59a075aea2",
                     "isSF": false
+                },
+                {
+                    "workerInfo": "0xceba2697cb06fd3f1b5647bc192f30a96749ee43262ff4bd7ea9d5a2d00cee40",
+                    "isSF": false
                 }
             ]
         },
@@ -246,6 +250,16 @@
             "workers": [
                 {
                     "workerInfo": "0x3ef9304468faecfaf7d2317960b9e69fb85ea2610cc089244f3c0d54abf167e7",
+                    "isSF": false
+                }
+            ]
+        },
+        {
+            "vaultInfo": "0x656362d06b843b5bdee0e815ede1bda36b6eaec69dc174ef60c65f93fc079c93",
+            "baseToken": "0x2053d08c1e2bd02791056171aab0fd12bd7cd7efad2ab8f6b9c8902f14df2ff2::ausd::AUSD",
+            "workers": [
+                {
+                    "workerInfo": "0x989baaba20b51b6aec07bd0c235ee9a2ee3e709071d34c547abf84841b4a5d5b",
                     "isSF": false
                 }
             ]

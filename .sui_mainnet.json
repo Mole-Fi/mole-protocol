@@ -8,6 +8,10 @@
                 {
                     "workerInfo": "0x47b2a1ad2a87de3351f8e7d7ce39b529a15af53e7b4ba89c8c69781ba2f6829f",
                     "isSF": true
+                },
+                {
+                    "workerInfo": "0x66f72cf2babece8f8bdfd7b370be35de5bd9fc67c7a13f45332149a213db5298",
+                    "isSF": false
                 }
             ]
         },
@@ -91,6 +95,10 @@
                 {
                     "workerInfo": "0x567032b6d5a37897662294c6442d893ba3e5dfcd16ed7b1a6ccf8e69ae7de288",
                     "isSF": false
+                },
+                {
+                    "workerInfo": "0x235e04373fb6799990ae1c148257fcd8ce68e99fd67a70d5250e398615a7051c",
+                    "isSF": false
                 }
             ]
         },
@@ -100,6 +108,10 @@
             "workers": [
                 {
                     "workerInfo": "0x888821cfa0e8d3e4de4602d91b17ea2e156e534a233424611b8f27e5d4bac439",
+                    "isSF": false
+                },
+                {
+                    "workerInfo": "0x12552c511257169cba63a0b2159e812d5fe578781ec051435063b346b5c05f03",
                     "isSF": false
                 }
             ]
@@ -123,6 +135,16 @@
             "baseToken": "0x2053d08c1e2bd02791056171aab0fd12bd7cd7efad2ab8f6b9c8902f14df2ff2::ausd::AUSD",
             "workers": [
                
+            ]
+        },
+        {
+            "vaultInfo": "0x2e998a1d3786010783c35f21642d39a95101936b1c8ea388c9110ffc50218a99",
+            "baseToken": "0xd1b72982e40348d069bb1ff701e634c117bb5f741f44dff91e472d3b01461e55::stsui::STSUI",
+            "workers": [
+                {
+                    "workerInfo": "0x8a1068568ccbd45262feea49a22d0ed42a28969e9fc0720ceb2306c838f9832f",
+                    "isSF": false
+                }
             ]
         }
     ]

@@ -85,6 +85,11 @@
                     "workerInfo": "0xaee16401df87f6c7dbe6397c960f6b7993f9d005e9d11cbda8f4d079e94cde8a",
                     "isSF": false,
                     "dex": 0
+                },
+                {
+                    "workerInfo": "0x218c06ec2ae747e889ca5720e603272f49fb3724a5777b0c3a8e7ea6dd2e5f9e",
+                    "isSF": false,
+                    "dex": 1
                 }
             ]
         },

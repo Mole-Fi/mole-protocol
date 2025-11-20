@@ -111,6 +111,11 @@
                     "workerInfo": "0x235e04373fb6799990ae1c148257fcd8ce68e99fd67a70d5250e398615a7051c",
                     "isSF": false,
                     "dex": 1
+                },
+                {
+                    "workerInfo": "0xc2512435e24509da820b17b836202830542baa94c4872ca37d832c8193f38b5f",
+                    "isSF": false,
+                    "dex": 1
                 }
             ]
         },
@@ -160,6 +165,24 @@
                     "isSF": false,
                     "dex": 1
                 }
+            ]
+        },
+        {
+            "vaultInfo": "0xbca41140b1743dce7d53a562e2957cf8410d9db276c7bb4b79e11231c347134d",
+            "baseToken": "0x3e8e9423d80e1774a7ca128fccd8bf5f1f7753be658c5e645929037f7c819040::lbtc::LBTC",
+            "workers": [
+                {
+                    "workerInfo": "0xe4297de0dda97bd2843badee6a621cf4eba631222c58ea7d3b686ca42ddb81c6",
+                    "isSF": false,
+                    "dex": 1
+                }
+            ]
+        },
+        {
+            "vaultInfo": "0xa4bdc975a9ead862af97d8e01b2ea7169679f822a36c8a33333d2d420823b628",
+            "baseToken": "0xaafb102dd0902f5055cadecd687fb5b71ca82ef0e0285d90afde828ec58ca96b::btc::BTC",
+            "workers": [
+                
             ]
         }
     ]

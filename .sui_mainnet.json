@@ -116,6 +116,11 @@
                     "workerInfo": "0xc2512435e24509da820b17b836202830542baa94c4872ca37d832c8193f38b5f",
                     "isSF": false,
                     "dex": 1
+                },
+                {
+                    "workerInfo": "0x2345b2f17ece01c23810a2f74f4b4593d4277a4ae189d4a356242beb28e20348",
+                    "isSF": false,
+                    "dex": 1
                 }
             ]
         },

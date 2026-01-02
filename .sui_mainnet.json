@@ -103,6 +103,16 @@
                     "dex": 0
                 },
                 {
+                    "workerInfo": "0xa128ba626e3ff9fc752ba1f48c56979da3bd7cca8835c86d6b4575ba763f0c9b",
+                    "isSF": false,
+                    "dex": 0
+                },
+                {
+                    "workerInfo": "0x9bdf9b6e9fd9adf3697671d41a9cce37c33969f90f229d0c7cce4e4842eb1b81",
+                    "isSF": false,
+                    "dex": 0
+                },
+                {
                     "workerInfo": "0x567032b6d5a37897662294c6442d893ba3e5dfcd16ed7b1a6ccf8e69ae7de288",
                     "isSF": false,
                     "dex": 0
@@ -124,6 +134,11 @@
                 },
                 {
                     "workerInfo": "0x10711a0f01a0eed736f21e456ec8a8228fb1127137126a45a1ab8954a16fe8a7",
+                    "isSF": false,
+                    "dex": 1
+                },
+                {
+                    "workerInfo": "0x9a0378cae1a6f0f9d88b8dad85aa2777dead136a850a94970e6b5aa8d6b45718",
                     "isSF": false,
                     "dex": 1
                 }
